@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Neura — AI Platform Concept</title>
+
+    <meta name="description"
+          content="A futuristic AI SaaS landing page concept designed by Nasif Rahman.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #07070a;
+            color: #f5f5f5;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.5;
+            overflow-x: hidden;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .container {
+            width: min(1180px, 100%);
+            margin: auto;
+            padding: 0 30px;
+        }
+
+
+        /* =========================
+           NAVIGATION
+        ========================= */
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 100;
+
+            background: rgba(7, 7, 10, 0.72);
+            backdrop-filter: blur(18px);
+
+            border-bottom: 1px solid #1b1b20;
+        }
+
+        .nav-inner {
+            height: 76px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+
+        .logo span {
+            color: #777;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 28px;
+        }
+
+        .nav-links a {
+            color: #777;
+            font-size: 12px;
+
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #fff;
+        }
+
+        .nav-button {
+            padding: 10px 18px;
+
+            border: 1px solid #333;
+            border-radius: 50px;
+
+            font-size: 12px;
+
+            transition: 0.3s;
+        }
+
+        .nav-button:hover {
+            background: #fff;
+            color: #000;
+        }
+
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+            min-height: 100vh;
+
+            padding-top: 76px;
+
+            display: flex;
+            align-items: center;
+
+            position: relative;
+        }
+
+        .hero::before {
+            content: "";
+
+            position: absolute;
+
+            width: 700px;
+            height: 700px;
+
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+
+            background: radial-gradient(
+                circle,
+                rgba(130, 100, 255, 0.14),
+                transparent 65%
+            );
+
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+
+            text-align: center;
+
+            max-width: 950px;
+
+            margin: auto;
+        }
+
+        .badge {
+            display: inline-flex;
+
+            align-items: center;
+            gap: 9px;
+
+            padding: 8px 14px;
+
+            border: 1px solid #292931;
+            border-radius: 50px;
+
+            color: #999;
+
+            font-size: 10px;
+
+            letter-spacing: 1px;
+
+            margin-bottom: 30px;
+        }
+
+        .badge span {
+            width: 6px;
+            height: 6px;
+
+            border-radius: 50%;
+
+            background: #aaa;
+
+            box-shadow:
+                0 0 12px rgba(180, 160, 255, 0.8);
+        }
+
+        .hero h1 {
+            font-size: clamp(65px, 10vw, 125px);
+
+            line-height: 0.86;
+
+            letter-spacing: -7px;
+        }
+
+        .hero h1 span {
+            display: block;
+
+            background: linear-gradient(
+                90deg,
+                #fff,
+                #888
+            );
+
+            -webkit-background-clip: text;
+            background-clip: text;
+
+            color: transparent;
+        }
+
+        .hero-description {
+            max-width: 620px;
+
+            margin: 35px auto 0;
+
+            color: #777;
+
+            font-size: 17px;
+        }
+
+        .hero-buttons {
+            display: flex;
+
+            justify-content: center;
+
+            gap: 12px;
+
+            margin-top: 40px;
+        }
+
+        .primary-button,
+        .secondary-button {
+            padding: 15px 25px;
+
+            border-radius: 50px;
+
+            font-size: 12px;
+
+            transition: 0.3s;
+        }
+
+        .primary-button {
+            background: #fff;
+            color: #000;
+        }
+
+        .primary-button:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 15px 40px rgba(255, 255, 255, 0.08);
+        }
+
+        .secondary-button {
+            border: 1px solid #333;
+            color: #fff;
+        }
+
+        .secondary-button:hover {
+            background: #fff;
+            color: #000;
+        }
+
+
+        /* =========================
+           AI VISUAL
+        ========================= */
+
+        .ai-visual {
+            width: min(900px, 100%);
+
+            height: 330px;
+
+            margin: 90px auto 0;
+
+            position: relative;
+
+            border: 1px solid #22232b;
+
+            background: rgba(255, 255, 255, 0.015);
+
+            overflow: hidden;
+        }
+
+        .ai-visual::before,
+        .ai-visual::after {
+            content: "";
+
+            position: absolute;
+
+            border-radius: 50%;
+
+            filter: blur(1px);
+        }
+
+        .ai-visual::before {
+            width: 280px;
+            height: 280px;
+
+            top: 25px;
+            left: 50%;
+
+            transform: translateX(-50%);
+
+            background: radial-gradient(
+                circle,
+                rgba(150, 120, 255, 0.25),
+                transparent 68%
+            );
+        }
+
+        .ai-visual::after {
+            width: 500px;
+            height: 1px;
+
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+
+            background: #333;
+        }
+
+        .orb {
+            position: absolute;
+
+            width: 110px;
+            height: 110px;
+
+            border-radius: 50%;
+
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+
+            background:
+                radial-gradient(
+                    circle at 35% 30%,
+                    #fff,
+                    #777 20%,
+                    #29253d 55%,
+                    #0c0b12 75%
+                );
+
+            box-shadow:
+                0 0 60px rgba(150, 120, 255, 0.25),
+                inset 0 0 30px rgba(255, 255, 255, 0.15);
+        }
+
+        .orbit {
+            position: absolute;
+
+            border: 1px solid #333;
+
+            border-radius: 50%;
+
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+        }
+
+        .orbit.one {
+            width: 240px;
+            height: 90px;
+
+            transform:
+                translate(-50%, -50%)
+                rotate(20deg);
+        }
+
+        .orbit.two {
+            width: 330px;
+            height: 130px;
+
+            transform:
+                translate(-50%, -50%)
+                rotate(-20deg);
+        }
+
+        .visual-text {
+            position: absolute;
+
+            bottom: 20px;
+            left: 22px;
+
+            color: #555;
+
+            font-size: 9px;
+
+            letter-spacing: 3px;
+        }
+
+
+        /* =========================
+           FEATURES
+        ========================= */
+
+        section {
+            padding: 140px 0;
+        }
+
+        .features {
+            border-top: 1px solid #18181d;
+        }
+
+        .section-header {
+            max-width: 800px;
+
+            margin-bottom: 70px;
+        }
+
+        .eyebrow {
+            color: #666;
+
+            font-size: 10px;
+
+            letter-spacing: 4px;
+
+            text-transform: uppercase;
+
+            margin-bottom: 20px;
+        }
+
+        .section-header h2 {
+            font-size: clamp(45px, 6vw, 72px);
+
+            line-height: 0.95;
+
+            letter-spacing: -4px;
+        }
+
+        .section-header h2 span {
+            color: #666;
+        }
+
+        .section-header p {
+            max-width: 550px;
+
+            margin-top: 25px;
+
+            color: #777;
+        }
+
+        .features-grid {
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 18px;
+        }
+
+        .feature {
+            min-height: 310px;
+
+            padding: 30px;
+
+            border: 1px solid #22232b;
+
+            background: #0b0b0f;
+
+            transition: 0.35s;
+        }
+
+        .feature:hover {
+            transform: translateY(-7px);
+
+            border-color: #444;
+        }
+
+        .feature-number {
+            color: #555;
+
+            font-size: 10px;
+
+            letter-spacing: 2px;
+        }
+
+        .feature h3 {
+            margin-top: 90px;
+
+            font-size: 25px;
+        }
+
+        .feature p {
+            color: #777;
+
+            font-size: 14px;
+
+            margin-top: 15px;
+        }
+
+
+        /* =========================
+           AI WORKFLOW
+        ========================= */
+
+        .workflow {
+            border-top: 1px solid #18181d;
+        }
+
+        .workflow-grid {
+            display: grid;
+
+            grid-template-columns: repeat(4, 1fr);
+
+            border-top: 1px solid #27272e;
+        }
+
+        .workflow-item {
+            padding: 28px 20px;
+
+            border-right: 1px solid #27272e;
+        }
+
+        .workflow-item:last-child {
+            border-right: none;
+        }
+
+        .workflow-item span {
+            color: #555;
+
+            font-size: 10px;
+
+            letter-spacing: 2px;
+        }
+
+        .workflow-item h3 {
+            margin-top: 55px;
+
+            font-size: 20px;
+        }
+
+        .workflow-item p {
+            color: #777;
+
+            font-size: 13px;
+
+            margin-top: 12px;
+        }
+
+
+        /* =========================
+           CTA
+        ========================= */
+
+        .cta {
+            background: #f1f0ed;
+
+            color: #111;
+
+            text-align: center;
+        }
+
+        .cta .eyebrow {
+            color: #888;
+        }
+
+        .cta h2 {
+            max-width: 900px;
+
+            margin: auto;
+
+            font-size: clamp(52px, 8vw, 100px);
+
+            line-height: 0.9;
+
+            letter-spacing: -6px;
+        }
+
+        .cta h2 span {
+            color: #888;
+        }
+
+        .cta p {
+            max-width: 550px;
+
+            margin: 30px auto;
+
+            color: #666;
+        }
+
+        .cta-button {
+            display: inline-block;
+
+            padding: 16px 27px;
+
+            background: #111;
+            color: #fff;
+
+            border-radius: 50px;
+
+            font-size: 12px;
+
+            transition: 0.3s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-4px);
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            padding: 30px 0;
+
+            background: #07070a;
+
+            color: #555;
+
+            border-top: 1px solid #1b1b20;
+        }
+
+        .footer-inner {
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+        }
+
+        .footer-inner strong {
+            color: #aaa;
+        }
+
+        .footer-inner p {
+            font-size: 10px;
+        }
+
+
+        /* =========================
+           RESPONSIVE
+        ========================= */
+
+        @media (max-width: 850px) {
+
+            .nav-links {
+                display: none;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .workflow-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .workflow-item:nth-child(2) {
+                border-right: none;
+            }
+
+            .workflow-item:nth-child(-n + 2) {
+                border-bottom: 1px solid #27272e;
+            }
+
+        }
+
+
+        @media (max-width: 550px) {
+
+            .container {
+                padding: 0 20px;
+            }
+
+            .hero h1 {
+                font-size: 64px;
+
+                letter-spacing: -4px;
+            }
+
+            .hero-description {
+                font-size: 15px;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+
+                align-items: center;
+            }
+
+            .ai-visual {
+                height: 260px;
+
+                margin-top: 60px;
+            }
+
+            section {
+                padding: 100px 0;
+            }
+
+            .section-header h2 {
+                font-size: 45px;
+
+                letter-spacing: -3px;
+            }
+
+            .workflow-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .workflow-item {
+                border-right: none;
+
+                border-bottom: 1px solid #27272e;
+            }
+
+            .workflow-item:last-child {
+                border-bottom: none;
+            }
+
+            .cta h2 {
+                font-size: 58px;
+
+                letter-spacing: -3px;
+            }
+
+            .footer-inner {
+                flex-direction: column;
+
+                gap: 12px;
+
+                text-align: center;
+            }
+
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <nav>
+
+        <div class="container nav-inner">
+
+            <a href="#" class="logo">
+                NEURA<span>.</span>
+            </a>
+
+            <div class="nav-links">
+                <a href="#features">Capabilities</a>
+                <a href="#workflow">How It Works</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <a href="#contact" class="nav-button">
+                Get Started
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="container">
+
+            <div class="hero-content">
+
+                <div class="badge">
+                    <span></span>
+                    AI PLATFORM / 2026
+                </div>
+
+                <h1>
+                    Intelligence
+                    <span>for what's next.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Neura helps teams turn complex information into
+                    faster decisions, smarter workflows and better
+                    digital experiences.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#contact" class="primary-button">
+                        Explore Neura →
+                    </a>
+
+                    <a href="#features" class="secondary-button">
+                        See Capabilities
+                    </a>
+
+                </div>
+
+
+                <!-- AI VISUAL -->
+
+                <div class="ai-visual">
+
+                    <div class="orbit one"></div>
+
+                    <div class="orbit two"></div>
+
+                    <div class="orb"></div>
+
+                    <div class="visual-text">
+                        INTELLIGENCE / CONNECTED
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FEATURES -->
+
+    <section class="features" id="features">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <p class="eyebrow">
+                    Capabilities
+                </p>
+
+                <h2>
+                    Less complexity.
+                    <span>More intelligence.</span>
+                </h2>
+
+                <p>
+                    Neura combines intelligent automation, data
+                    understanding and natural interaction into
+                    one focused experience.
+                </p>
+
+            </div>
+
+
+            <div class="features-grid">
+
+                <div class="feature">
+
+                    <span class="feature-number">
+                        01
+                    </span>
+
+                    <h3>
+                        Understand
+                    </h3>
+
+                    <p>
+                        Transform large amounts of information
+                        into useful insights your team can act on.
+                    </p>
+
+                </div>
+
+
+                <div class="feature">
+
+                    <span class="feature-number">
+                        02
+                    </span>
+
+                    <h3>
+                        Automate
+                    </h3>
+
+                    <p>
+                        Reduce repetitive work with intelligent
+                        workflows designed around your processes.
+                    </p>
+
+                </div>
+
+
+                <div class="feature">
+
+                    <span class="feature-number">
+                        03
+                    </span>
+
+                    <h3>
+                        Create
+                    </h3>
+
+                    <p>
+                        Turn ideas into content, strategies and
+                        digital experiences in less time.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- WORKFLOW -->
+
+    <section class="workflow" id="workflow">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <p class="eyebrow">
+                    How It Works
+                </p>
+
+                <h2>
+                    From question
+                    <span>to clarity.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="workflow-grid">
+
+                <div class="workflow-item">
+
+                    <span>01</span>
+
+                    <h3>
+                        Connect
+                    </h3>
+
+                    <p>
+                        Bring your information, tools and
+                        workflows into one environment.
+                    </p>
+
+                </div>
+
+
+                <div class="workflow-item">
+
+                    <span>02</span>
+
+                    <h3>
+                        Analyze
+                    </h3>
+
+                    <p>
+                        Neura processes information and finds
+                        patterns that matter.
+                    </p>
+
+                </div>
+
+
+                <div class="workflow-item">
+
+                    <span>03</span>
+
+                    <h3>
+                        Decide
+                    </h3>
+
+                    <p>
+                        Get focused insights that help your
+                        team make better decisions.
+                    </p>
+
+                </div>
+
+
+                <div class="workflow-item">
+
+                    <span>04</span>
+
+                    <h3>
+                        Execute
+                    </h3>
+
+                    <p>
+                        Turn decisions into actions with
+                        intelligent automation.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CTA -->
+
+    <section class="cta" id="contact">
+
+        <div class="container">
+
+            <p class="eyebrow">
+                The Future Is Being Built
+            </p>
+
+            <h2>
+                Make your next idea
+                <span>intelligent.</span>
+            </h2>
+
+            <p>
+                Explore how intelligent digital experiences can
+                change the way your team works.
+            </p>
+
+            <a
+                href="mailto:nasifr293@gmail.com"
+                class="cta-button"
+            >
+                Talk About Your Idea →
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="container footer-inner">
+
+            <p>
+                <strong>NEURA.</strong>
+                AI Platform Concept
+            </p>
+
+            <p>
+                Concept designed by Nasif Rahman · 2026
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
