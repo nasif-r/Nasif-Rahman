@@ -1596,4 +1596,28 @@ footer {
 
 .neura-hero-btn:hover span:last-child {
     transform: translateX(4px);
+}.lets-talk-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px 20px;
+
+    background: #ffffff;
+    color: #000000;
+
+    border: 1px solid #ffffff;
+    border-radius: 6px;
+
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+
+    transition: all 0.25s ease;
+}
+
+.lets-talk-btn:hover {
+    background: #eeeeee;
+    color: #000000;
+    transform: translateY(-2px);
 }
