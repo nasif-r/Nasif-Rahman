@@ -502,6 +502,143 @@ if (
 ) {
     return "I am an AI chatbot developed by Nasif Rahman.";
 }
+const today = new Date();
+
+const isEighth = today.getDate() === 8;
+
+const relationshipStart = new Date(2025, 5, 8); // June 8, 2025
+
+function getRelationshipMonths() {
+    return (
+        (today.getFullYear() - relationshipStart.getFullYear()) * 12 +
+        (today.getMonth() - relationshipStart.getMonth())
+    );
+}
+
+const relationshipMonths = getRelationshipMonths();
+
+const tubaMessage =
+    text.includes("i am tuba") ||
+    text.includes("i'm tuba") ||
+    text.includes("im tuba") ||
+    text.includes("i am marium rahman tuba") ||
+    text.includes("i'm marium rahman tuba") ||
+    text.includes("im marium rahman tuba") ||
+    text.includes("i am marium") ||
+    text.includes("i'm marium") ||
+    text.includes("im marium");
+
+if (isEighth && tubaMessage) {
+
+    const monthlyMessages = {
+
+        1: "Happy 1 month, Tuba. 💜 One month ago, something beautiful began. June 8, 2025 will always be the beginning of a very special chapter in Nasif's life. ✨",
+
+        2: "Happy 2 months, Tuba. 💜 Two months already! Every 8th is a little reminder of the beautiful journey that began on June 8, 2025. 🌙",
+
+        3: "Happy 3 months, Tuba. 💜 Three months of memories, conversations and countless little moments. I hope today brings a beautiful smile to your face. ✨",
+
+        4: "Happy 4 months, Tuba. 💜 Four months have passed since the beginning of this special journey. Some dates become special simply because of the person connected to them. 🌷",
+
+        5: "Happy 5 months, Tuba. 💜 Five months of a story that began on June 8, 2025. May every new month bring another reason to smile. ✨",
+
+        6: "Happy 6 months, Tuba. 💜 Six months already! Half a year of a journey that started with one very important date—June 8, 2025. 💜",
+
+        7: "Happy 7 months, Tuba. 💜 Seven months have passed, and the 8th still carries a little extra meaning. Keep this beautiful memory close. 🌙",
+
+        8: "Happy 8 months, Tuba. 💜 Eight months of a special journey. Some moments become memories, and some dates become unforgettable. June 8, 2025 is one of those dates. ✨",
+
+        9: "Happy 9 months, Tuba. 💜 Nine months of memories since June 8, 2025. Another 8th, another little reminder of how far this journey has come. 🌷",
+
+        10: "Happy 10 months, Tuba. 💜 Ten months already! Every month adds another page to a story that started on June 8, 2025. 📖✨",
+
+        11: "Happy 11 months, Tuba. 💜 One month away from a whole year. The journey that began on June 8, 2025 keeps becoming more meaningful with every 8th. 💜",
+
+        12: "Happy 1 year, Tuba. 💜 Twelve months, one whole year, and countless memories since June 8, 2025. Today isn't just another 8th—it marks one beautiful year of a very special journey. ✨",
+
+        13: "Happy 13 months, Tuba. 💜 A year and one month since June 8, 2025. The calendar keeps moving, but some dates never lose their meaning. 🌙",
+
+        14: "Happy 14 months, Tuba. 💜 Fourteen months have passed since June 8, 2025. Every 8th brings back the memory of where this beautiful journey began. ✨",
+
+        15: "Happy 15 months, Tuba. 💜 Fifteen months of memories since June 8, 2025. Another month, another 8th, and another little reason to smile. 💜"
+
+    };
+
+    if (monthlyMessages[relationshipMonths]) {
+        return monthlyMessages[relationshipMonths];
+    }
+
+    return `Happy ${relationshipMonths} months, Tuba. 💜 Today is the 8th, another little milestone since June 8, 2025. I hope you enjoy this special message made just for you. ✨`;
+}
+// TUBA — MARRIAGE ANNIVERSARY MESSAGE
+
+const marriageDate = new Date(2025, 8, 25); // September 25, 2025
+
+const isMarriageAnniversaryDate = today.getDate() === 25;
+
+function getMarriageMonths() {
+    return (
+        (today.getFullYear() - marriageDate.getFullYear()) * 12 +
+        (today.getMonth() - marriageDate.getMonth())
+    );
+}
+
+const marriageMonths = getMarriageMonths();
+
+if (isMarriageAnniversaryDate && tubaMessage) {
+
+    const marriageMessages = {
+
+        1: "Happy 1 month of marriage, Tuba. 💍💜 September 25, 2025 marked the beginning of another beautiful chapter. One month down, and hopefully a lifetime of beautiful memories ahead. ✨",
+
+        2: "Happy 2 months of marriage, Tuba. 💍💜 Two months since September 25, 2025. Every 25th is now a little reminder of a very special day. 🌙✨",
+
+        3: "Happy 3 months of marriage, Tuba. 💜💍 Three months of this beautiful chapter. May every month bring another reason to smile and another memory to cherish. ✨",
+
+        4: "Happy 4 months of marriage, Tuba. 💍💜 Four months since September 25, 2025. Some dates become special because they mark the beginning of something unforgettable. 🌷",
+
+        5: "Happy 5 months of marriage, Tuba. 💜 Five months of a journey that began with a very special day—September 25, 2025. May there always be more beautiful chapters ahead. ✨",
+
+        6: "Happy 6 months of marriage, Tuba. 💍💜 Half a year already! Six months since September 25, 2025, and another beautiful milestone to remember. 🌙",
+
+        7: "Happy 7 months of marriage, Tuba. 💜 Seven months since that special September 25th. Every month adds another little memory to the story. ✨",
+
+        8: "Happy 8 months of marriage, Tuba. 💍💜 Eight months since September 25, 2025. Another 25th, another little reminder of a very meaningful beginning. 🌷",
+
+        9: "Happy 9 months of marriage, Tuba. 💜 Nine months of memories since September 25, 2025. May the journey ahead be filled with even more beautiful moments. ✨",
+
+        10: "Happy 10 months of marriage, Tuba. 💍💜 Ten months already! Every 25th brings back the memory of the day this special chapter began. 🌙",
+
+        11: "Happy 11 months of marriage, Tuba. 💜 One month away from a whole year since September 25, 2025. What a beautiful milestone to have reached together. ✨",
+
+        12: "Happy 1st Marriage Anniversary, Tuba! 💍💜 One whole year since September 25, 2025. Today isn't just another 25th—it's a celebration of one beautiful year and the beginning of a very special chapter. ✨",
+
+        13: "Happy 13 months of marriage, Tuba. 💜 One year and one month since September 25, 2025. Another month, another 25th, another beautiful memory. 🌙",
+
+        14: "Happy 14 months of marriage, Tuba. 💍💜 Fourteen months since September 25, 2025. May every new month bring another reason to celebrate. ✨",
+
+        15: "Happy 15 months of marriage, Tuba. 💜 Fifteen months since that special September 25th. The journey continues, one beautiful month at a time. 🌷"
+    };
+
+    if (marriageMessages[marriageMonths]) {
+        return marriageMessages[marriageMonths];
+    }
+
+    return `Happy ${marriageMonths} months of marriage, Tuba. 💍💜 Today is another special 25th since September 25, 2025. I hope this little message makes your day a little brighter. ✨`;
+}
+if (
+    text.includes("i am tuba") ||
+    text.includes("i'm tuba") ||
+    text.includes("im tuba") ||
+    text.includes("i am marium rahman tuba") ||
+    text.includes("i'm marium rahman tuba") ||
+    text.includes("im marium rahman tuba") ||
+    text.includes("i am marium") ||
+    text.includes("i'm marium") ||
+    text.includes("im marium")
+) {
+    return "Ohhh... so you are Marium Rahman Tuba! 💜 Welcome to Neura. I was actually waiting for someone very special to visit. ✨ You are not just another visitor here—you are the person Nasif cares about deeply and the one this little surprise was made for. So take a look around, explore his work, try asking me something, and enjoy this little moment. I hope you smile when you discover what Nasif has created here. 🌙 From all the projects, ideas and little details on this website, there is one thing I can confidently say: you are a very special part of Nasif's world. 💜 Welcome, Tuba. Enjoy your visit! ✨";
+}
     // ========================================
     // DEFAULT
     // ========================================
