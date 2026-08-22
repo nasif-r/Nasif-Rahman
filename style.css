@@ -1545,4 +1545,55 @@ footer {
         font-size: 9px;
     }
 
+}.neura-hero-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    margin-top: 18px;
+    padding: 13px 24px;
+
+    border: 1px solid #9b7cff;
+    border-radius: 50px;
+
+    background: rgba(120, 80, 255, 0.08);
+    color: #c7b8ff;
+
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+
+    box-shadow:
+        0 0 12px rgba(130, 90, 255, 0.25),
+        inset 0 0 12px rgba(130, 90, 255, 0.05);
+
+    transition: 0.3s ease;
+}
+
+.neura-hero-btn span:first-child {
+    color: #b79cff;
+    text-shadow: 0 0 10px #9b7cff;
+}
+
+.neura-hero-btn span:last-child {
+    transition: 0.3s ease;
+}
+
+.neura-hero-btn:hover {
+    transform: translateY(-3px);
+
+    background: rgba(130, 90, 255, 0.16);
+
+    border-color: #b9a3ff;
+
+    color: #fff;
+
+    box-shadow:
+        0 0 20px rgba(130, 90, 255, 0.45),
+        0 0 45px rgba(130, 90, 255, 0.18);
+}
+
+.neura-hero-btn:hover span:last-child {
+    transform: translateX(4px);
 }

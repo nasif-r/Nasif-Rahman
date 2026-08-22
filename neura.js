@@ -505,7 +505,147 @@ if (
     // ========================================
     // DEFAULT
     // ========================================
+// BUSINESS IDEAS
 
+if (
+    text.includes("what business should i start") ||
+    text.includes("which business can i start")
+) {
+    return "Start with a business that matches your skills, interests and available resources. I can help you explore practical ideas.";
+}
+
+if (
+    text.includes("how can i start a business with low budget") ||
+    text.includes("business with low budget") ||
+    text.includes("low budget business")
+) {
+    return "Start small. Focus on a simple service or digital product that solves a specific problem before investing heavily.";
+}
+
+if (
+    text.includes("how do i find a good business idea") ||
+    text.includes("how can i find a business idea")
+) {
+    return "Look for problems people frequently face, then think about how you can solve one of them better, faster or more affordably.";
+}
+
+if (
+    text.includes("how can i get my first customer") ||
+    text.includes("how do i get my first customer")
+) {
+    return "Start with your network, local businesses and targeted online outreach. Offer a clear solution instead of simply promoting yourself.";
+}
+
+
+// WEBSITE
+
+if (
+    text.includes("why does my business need a website") ||
+    text.includes("why does a business need a website")
+) {
+    return "A professional website builds credibility, explains your services and gives potential customers a place to learn more about your business.";
+}
+
+if (
+    text.includes("how much does a website cost") ||
+    text.includes("website cost")
+) {
+    return "It depends on the type, features and complexity of the website. A simple business website usually costs much less than a custom web application.";
+}
+
+if (
+    text.includes("what makes a good website") ||
+    text.includes("what makes a website good")
+) {
+    return "A good website is clear, fast, mobile-friendly, easy to navigate and focused on the user's needs.";
+}
+
+if (
+    text.includes("how can i make my website look professional") ||
+    text.includes("make my website look professional")
+) {
+    return "Use consistent typography, spacing, colors and imagery. Keep the layout simple and make the most important information easy to find.";
+}
+
+
+// MARKETING
+
+if (
+    text.includes("how can i grow my business online") ||
+    text.includes("grow my business online")
+) {
+    return "Build a strong online presence, create useful content, understand your target audience and consistently improve your marketing.";
+}
+
+if (
+    text.includes("how do i promote my website") ||
+    text.includes("how can i promote my website")
+) {
+    return "Use social media, search engine optimization, useful content, referrals and targeted advertising when appropriate.";
+}
+
+if (
+    text.includes("what is branding") ||
+    text.includes("what does branding mean")
+) {
+    return "Branding is how a business presents itself and how people recognize and remember it.";
+}
+
+
+// AI
+
+if (
+    text.includes("how can ai help my business") ||
+    text.includes("how can ai help a business")
+) {
+    return "AI can help with research, customer support, content ideas, data analysis, automation and many repetitive tasks.";
+}
+
+if (
+    text.includes("can ai replace a website") ||
+    text.includes("can ai replace websites")
+) {
+    return "No. AI and websites serve different purposes. AI can make a website more useful, while the website remains an important digital presence.";
+}
+
+if (
+    text.includes("how can i add ai to my website") ||
+    text.includes("how do i add ai to my website")
+) {
+    return "You can add AI chat, recommendations, content generation, search or automation depending on what your website needs.";
+}
+
+
+// FREELANCING
+
+if (
+    text.includes("how can i start freelancing") ||
+    text.includes("how do i start freelancing")
+) {
+    return "Choose one useful skill, build a few strong projects, create a portfolio and start reaching out to potential clients.";
+}
+
+if (
+    text.includes("which skill is best for freelancing") ||
+    text.includes("best skill for freelancing")
+) {
+    return "There is no single best skill. Web development, UI design, digital marketing, video editing and AI-related skills can all be valuable when combined with strong problem-solving.";
+}
+
+
+// NEURA CAPABILITIES
+
+if (
+    text.includes("what can you help me with") ||
+    text.includes("what can you help with")
+) {
+    return "I can help you explore business ideas, websites, branding, marketing, customer research, pricing, startups and AI-powered digital experiences.";
+}
+
+
+// DEFAULT RESPONSE
+
+return "I don't have an answer for that yet. Try asking me about business ideas, websites, marketing, branding, customers, pricing, startups, freelancing or AI.";
     return "I don't have an answer for that yet. Try asking me about business ideas, startups, marketing, branding, customers, pricing, freelancing, AI or web development.";
 
 }
