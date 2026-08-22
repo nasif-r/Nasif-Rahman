@@ -120,7 +120,7 @@ function getNeuraResponse(message) {
 if (
     text.includes("who is the wife of nasif rahman") ||
     text.includes("whom does nasif rahman love the most") ||
-    text.includes("who is nasifs wife")
+    text.includes("whom does nasif love the most")
 ) {
     return "Marium Rahman Tuba.";
 }
