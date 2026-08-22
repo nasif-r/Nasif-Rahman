@@ -1,0 +1,126 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Neura - An intelligent AI chatbot created by Nasif.">
+
+    <title>Neura | AI Assistant</title>
+
+    <link rel="stylesheet" href="neura.css">
+</head>
+
+<body>
+
+    <!-- ================================
+         NAVBAR
+    ================================= -->
+
+   <header class="neura-navbar">
+
+    <a href="index.html" class="neura-logo">
+        NEURA<span>.</span>
+    </a>
+
+    <div class="neura-nav-right">
+
+        <div class="neura-status">
+            <span class="status-dot"></span>
+            AI ONLINE
+        </div>
+
+        <a href="index.html" class="back-portfolio">
+            ← Back to Portfolio
+        </a>
+
+    </div>
+
+</header>
+
+
+    <!-- ================================
+         CHAT APPLICATION
+    ================================= -->
+
+    <main class="chat-container">
+
+        <section class="chat-card">
+
+            <!-- CHAT HEADER -->
+
+            <div class="chat-header">
+
+                <div class="ai-avatar">
+                    N
+                </div>
+
+                <div class="ai-info">
+                    <h1>Neura</h1>
+                    <p>Your intelligent AI assistant</p>
+                </div>
+
+            </div>
+
+
+            <!-- CHAT MESSAGES -->
+
+            <div class="chat-messages" id="chatMessages">
+
+                <div class="message ai-message">
+
+                    <div class="message-avatar">
+                        N
+                    </div>
+
+                    <div class="message-content">
+                        <span class="message-name">Neura</span>
+
+                        <p>
+                            Hello! I'm Neura, your AI assistant.
+                            How can I help you today?
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- INPUT AREA -->
+
+            <div class="chat-input-area">
+
+                <input
+                    type="text"
+                    id="userInput"
+                    placeholder="Ask Neura anything..."
+                    autocomplete="off"
+                >
+
+                <button id="sendButton" type="button">
+                    Send
+                </button>
+
+            </div>
+
+
+            <!-- FOOTER -->
+
+            <div class="chat-footer">
+                Neura AI • Built by Nasif
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="neura.js"></script>
+
+</body>
+</html>
+```
