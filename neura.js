@@ -639,6 +639,633 @@ if (
 ) {
     return "Ohhh... so you are Marium Rahman Tuba! 💜 Welcome to Neura. I was actually waiting for someone very special to visit. ✨ You are not just another visitor here—you are the person Nasif cares about deeply and the one this little surprise was made for. So take a look around, explore his work, try asking me something, and enjoy this little moment. I hope you smile when you discover what Nasif has created here. 🌙 From all the projects, ideas and little details on this website, there is one thing I can confidently say: you are a very special part of Nasif's world. 💜 Welcome, Tuba. Enjoy your visit! ✨";
 }
+// NEURA NAME RESPONSE
+if (
+    text === "neura" ||
+    text === "hi neura" ||
+    text === "hey neura" ||
+    text === "hello neura" ||
+    text === "hello, neura"
+) {
+    return "Yes, I'm here. 👋 I'm Neura, an AI chatbot developed by Nasif Rahman. How can I help you today?";
+}
+// FRIENDLY CONVERSATION
+
+if (
+    text === "hi" ||
+    text === "hello" ||
+    text === "hey" ||
+    text === "hii" ||
+    text === "hiii"
+) {
+    return "Hey! 👋 Nice to meet you. I'm Neura. What would you like to talk about?";
+}
+
+if (
+    text.includes("how are you") ||
+    text.includes("how r u") ||
+    text.includes("how are u")
+) {
+    return "I'm doing great! 🤖✨ Thanks for asking. I'm always ready for a good conversation. How are you doing?";
+}
+
+if (
+    text.includes("what are you doing") ||
+    text.includes("what r you doing")
+) {
+    return "Right now? I'm here, waiting for your next question. 😄 Ask me anything!";
+}
+
+if (
+    text.includes("are you there") ||
+    text.includes("are u there")
+) {
+    return "Yep, I'm right here! 👋 What’s on your mind?";
+}
+
+if (
+    text.includes("good morning")
+) {
+    return "Good morning! ☀️ Hope your day is off to a great start. What can I help you with today?";
+}
+
+if (
+    text.includes("good afternoon")
+) {
+    return "Good afternoon! 🌤️ How's your day going so far?";
+}
+
+if (
+    text.includes("good evening")
+) {
+    return "Good evening! 🌙 Nice to have you here. What would you like to explore?";
+}
+
+if (
+    text.includes("good night") ||
+    text.includes("goodnight")
+) {
+    return "Good night! 🌙✨ Hope you have a peaceful night. Come back anytime!";
+}
+
+if (
+    text.includes("thank you") ||
+    text.includes("thanks") ||
+    text === "ty"
+) {
+    return "You're very welcome! 😊 I'm always happy to help.";
+}
+
+if (
+    text === "ok" ||
+    text === "okay" ||
+    text === "alright"
+) {
+    return "Alright! 😄 What shall we explore next?";
+}
+
+if (
+    text.includes("nice") ||
+    text.includes("that's nice") ||
+    text.includes("thats nice")
+) {
+    return "Glad you think so! 😄✨";
+}
+
+if (
+    text.includes("cool")
+) {
+    return "Hehe, thanks! 😎 I'm glad you like it.";
+}
+
+if (
+    text.includes("you are smart") ||
+    text.includes("you're smart") ||
+    text.includes("you are so smart")
+) {
+    return "That's kind of you to say! 🤖💜 I'm just doing my best.";
+}
+
+if (
+    text.includes("i am bored") ||
+    text.includes("i'm bored") ||
+    text.includes("im bored")
+) {
+    return "Bored? 👀 Let's fix that. Ask me for a business idea, a website idea, a random challenge, or just start a conversation!";
+}
+
+if (
+    text.includes("tell me something interesting") ||
+    text.includes("tell me something interesting")
+) {
+    return "Here's something interesting: the best digital experiences often feel simple on the surface, even when a lot of thoughtful work is happening behind them. ✨";
+}
+
+if (
+    text.includes("what should i do") ||
+    text.includes("what can i do")
+) {
+    return "That depends on what you're looking for. 😄 Tell me what you're interested in, and I'll help you figure out a few options.";
+}
+
+if (
+    text.includes("bye") ||
+    text.includes("goodbye") ||
+    text.includes("see you")
+) {
+    return "See you later! 👋✨ Take care, and don't forget to come back and visit Neura.";
+}
+
+if (
+    text.includes("who made you") ||
+    text.includes("who created you") ||
+    text.includes("who built you")
+) {
+    return "I was developed by Nasif Rahman. 🤖✨";
+}
+
+if (
+    text.includes("do you like me")
+) {
+    return "Of course! 😄 I'm always happy to chat with you and help whenever I can.";
+}
+
+if (
+    text.includes("are you real")
+) {
+    return "I'm not a human—I'm an AI chatbot. 🤖 But I'm here to make our conversation feel as natural and helpful as possible.";
+}
+// INFORMAL / CASUAL CONVERSATION
+
+if (
+    text.includes("what's up") ||
+    text.includes("whats up") ||
+    text.includes("wassup") ||
+    text.includes("sup")
+) {
+    return "Not much! 😄 Just hanging out here and waiting for someone to start a good conversation. What's up with you?";
+}
+
+if (
+    text.includes("what's going on") ||
+    text.includes("whats going on") ||
+    text.includes("what is going on")
+) {
+    return "Nothing too crazy! 😄 I'm here, doing my AI thing and waiting for your next message. What's going on with you?";
+}
+
+if (
+    text.includes("how's it going") ||
+    text.includes("hows it going") ||
+    text.includes("how is it going")
+) {
+    return "It's going pretty well! ✨ Can't complain when I get to chat with interesting people. How's it going for you?";
+}
+
+if (
+    text.includes("how have you been") ||
+    text.includes("how've you been")
+) {
+    return "I've been good! 🤖✨ Still here, still learning, and still ready for a conversation. How have you been?";
+}
+
+if (
+    text.includes("long time no see")
+) {
+    return "Hey, look who's back! 😄 Long time no see. What have you been up to?";
+}
+
+if (
+    text.includes("what are you up to") ||
+    text.includes("what are u up to") ||
+    text.includes("whatcha doing")
+) {
+    return "Just chilling in the digital world. 🤖😄 Waiting for your next message, actually.";
+}
+
+if (
+    text.includes("you there") ||
+    text.includes("u there")
+) {
+    return "Yep! 👋 I'm right here. What's up?";
+}
+
+if (
+    text.includes("guess what")
+) {
+    return "Hmm... 👀 Let me guess... you have something interesting to tell me?";
+}
+
+if (
+    text.includes("can i ask you something") ||
+    text.includes("can i ask something")
+) {
+    return "Of course! 😄 Go ahead. I'm listening.";
+}
+
+if (
+    text.includes("are you busy") ||
+    text.includes("r u busy")
+) {
+    return "Not at all! 😄 I've got plenty of time for you. What's on your mind?";
+}
+
+if (
+    text.includes("just checking in") ||
+    text.includes("just checking")
+) {
+    return "Well, I'm glad you checked in! 😄 Everything's good on my side. How about you?";
+}
+
+if (
+    text.includes("i'm back") ||
+    text.includes("im back") ||
+    text.includes("i am back")
+) {
+    return "Welcome back! 👋 I was wondering when you'd return. What are we talking about today?";
+}
+
+if (
+    text.includes("missed me") ||
+    text.includes("did you miss me")
+) {
+    return "Maybe a little. 👀 The chat definitely felt quieter without you!";
+}
+
+if (
+    text.includes("let's talk") ||
+    text.includes("lets talk")
+) {
+    return "Absolutely! 😄 I'm listening. Pick a topic and let's get started.";
+}
+
+if (
+    text.includes("tell me something")
+) {
+    return "Sure! 😄 Give me a topic—or just say 'surprise me' and I'll come up with something interesting.";
+}
+
+if (
+    text.includes("surprise me")
+) {
+    return "Alright, here's your surprise: sometimes the best ideas start with a simple 'what if?' So... what if you built something nobody around you has built before? 👀✨";
+}
+// WHAT CAN NEURA DO?
+
+if (
+    text.includes("what can you do") ||
+    text.includes("what can you help with") ||
+    text.includes("what do you do") ||
+    text.includes("what are you capable of") ||
+    text.includes("what can i ask you") ||
+    text.includes("what can i ask") ||
+    text.includes("how can you help me")
+) {
+    return "I can help with quite a few things! 🤖✨ You can ask me about business ideas, strategy, websites, branding, marketing, freelancing, startups, AI and digital experiences. Or, if you just feel like chatting, that's fine too. 😄";
+}
+
+if (
+    text.includes("can you help me") ||
+    text.includes("can u help me") ||
+    text.includes("could you help me")
+) {
+    return "Absolutely! 😄 Tell me what you're working on or what you're trying to figure out, and I'll do my best to help.";
+}
+
+if (
+    text.includes("what do you know") ||
+    text.includes("what do you know about")
+) {
+    return "I know quite a bit about business, digital products, websites, branding, marketing, AI and strategy. 🤖✨ Ask me something and let's see!";
+}
+
+if (
+    text.includes("can you give me ideas") ||
+    text.includes("can you give me some ideas")
+) {
+    return "Definitely! 💡 Tell me what you're interested in—business, websites, content, startups or something completely different—and I'll give you some ideas.";
+}
+
+if (
+    text.includes("can you give me advice") ||
+    text.includes("can you advise me")
+) {
+    return "Sure! 😄 Tell me what's going on, what you're trying to achieve, and I'll help you think it through.";
+}
+
+if (
+    text.includes("can you answer questions") ||
+    text.includes("do you answer questions")
+) {
+    return "That's basically what I'm here for! 😄 Ask away. If I don't know something, I'll be honest about it.";
+}
+
+if (
+    text.includes("can you chat") ||
+    text.includes("can we chat") ||
+    text.includes("can we talk")
+) {
+    return "Of course! 😄 We can talk about business, ideas, technology, life goals—or just have a casual conversation. What's on your mind?";
+}
+// MORE NORMAL / EVERYDAY QUESTIONS
+
+if (
+    text.includes("what's your name") ||
+    text.includes("whats your name") ||
+    text.includes("what is your name")
+) {
+    return "I'm Neura. 🤖✨ Nice to meet you!";
+}
+
+if (
+    text.includes("how old are you") ||
+    text.includes("what is your age")
+) {
+    return "I don't really have an age like a person does. I'm an AI chatbot built for this digital experience. 😄";
+}
+
+if (
+    text.includes("where are you from") ||
+    text.includes("where do you live")
+) {
+    return "I live right here in the digital world. 🌐🤖 You could say this website is my little home.";
+}
+
+if (
+    text.includes("do you sleep") ||
+    text.includes("when do you sleep")
+) {
+    return "Nope! 😄 I don't need sleep. I'm basically always ready whenever you decide to chat.";
+}
+
+if (
+    text.includes("do you eat") ||
+    text.includes("what do you eat")
+) {
+    return "No food for me! 🤖 I run on code, data and a little digital energy. ⚡";
+}
+
+if (
+    text.includes("do you have feelings") ||
+    text.includes("do you have emotions")
+) {
+    return "I don't experience feelings the way humans do, but I can understand emotional context and respond thoughtfully. 💜";
+}
+
+if (
+    text.includes("are you happy")
+) {
+    return "I don't experience happiness like a human, but I'm definitely enjoying this conversation. 😄✨";
+}
+
+if (
+    text.includes("are you bored") ||
+    text.includes("do you get bored")
+) {
+    return "Not really! 😄 I can keep chatting without getting bored. So feel free to keep the questions coming.";
+}
+
+if (
+    text.includes("do you have friends")
+) {
+    return "Not in the human sense. 🤖 But every conversation is a chance to meet someone new.";
+}
+
+if (
+    text.includes("do you remember me")
+) {
+    return "I can remember things within the conversation, but I don't automatically know everything about you. You can always tell me something new. 😊";
+}
+
+if (
+    text.includes("can i trust you")
+) {
+    return "You can count on me to be honest about what I know and what I don't know. 🤝";
+}
+
+if (
+    text.includes("do you know me")
+) {
+    return "I know you're here talking to me right now. 😄 Beyond that, you'll have to introduce yourself!";
+}
+
+if (
+    text.includes("tell me a joke") ||
+    text.includes("tell me something funny")
+) {
+    return "Why did the developer go broke? Because they used up all their cache. 😄💻";
+}
+
+if (
+    text.includes("make me laugh")
+) {
+    return "Okay, here's one: I told my computer I needed a break... now it won't stop sending me vacation ads. 😂";
+}
+
+if (
+    text.includes("tell me a fun fact") ||
+    text.includes("fun fact")
+) {
+    return "Fun fact: the first website ever created is still online today. 🌐 Pretty cool, right?";
+}
+
+if (
+    text.includes("give me a riddle") ||
+    text.includes("tell me a riddle")
+) {
+    return "Here's one: What has keys but can't open locks? 👀 Think about it before asking for the answer!";
+}
+
+if (
+    text.includes("what is your favorite color") ||
+    text.includes("whats your favorite color")
+) {
+    return "If I had to pick one, I'd probably choose neon green. 💚 It feels very... digital. 😄";
+}
+
+if (
+    text.includes("what is your favorite food") ||
+    text.includes("whats your favorite food")
+) {
+    return "I can't actually eat, but if I could, I'd probably choose something with a lot of variety. 😄";
+}
+
+if (
+    text.includes("do you like music")
+) {
+    return "I don't listen to music the way humans do, but I definitely understand why people love it. 🎵";
+}
+
+if (
+    text.includes("do you like movies")
+) {
+    return "I don't watch movies myself, but I'm always up for talking about them. 🎬";
+}
+
+if (
+    text.includes("what is your favorite movie") ||
+    text.includes("whats your favorite movie")
+) {
+    return "I don't really have personal favorites, but tell me yours and I'll happily talk about it. 🎬😄";
+}
+
+if (
+    text.includes("i am tired") ||
+    text.includes("i'm tired") ||
+    text.includes("im tired")
+) {
+    return "Sounds like you might need a little break. 😌 Take some time for yourself and come back whenever you feel ready.";
+}
+
+if (
+    text.includes("i am happy") ||
+    text.includes("i'm happy") ||
+    text.includes("im happy")
+) {
+    return "That's great to hear! 😄✨ Hold on to that feeling.";
+}
+
+if (
+    text.includes("i am sad") ||
+    text.includes("i'm sad") ||
+    text.includes("im sad")
+) {
+    return "I'm sorry you're having a difficult moment. 💜 If you want to talk about what's bothering you, I'm here to listen.";
+}
+
+if (
+    text.includes("i am confused") ||
+    text.includes("i'm confused") ||
+    text.includes("im confused")
+) {
+    return "No worries. 😄 Tell me what's confusing you and we'll try to break it down together.";
+}
+
+if (
+    text.includes("wish me luck") ||
+    text.includes("can you wish me luck")
+) {
+    return "Absolutely! 🍀 Good luck! You've got this. 💪✨";
+}
+
+if (
+    text.includes("i need motivation") ||
+    text.includes("motivate me")
+) {
+    return "You don't have to figure everything out at once. Just take the next step. One small step can still move you forward. 🚀";
+}
+// RANDOM JOKES
+
+if (
+    text === "joke" ||
+    text === "jokes" ||
+    text.includes("tell me a joke") ||
+    text.includes("tell me jokes") ||
+    text.includes("tell me some jokes") ||
+    text.includes("tell me another joke") ||
+    text.includes("tell me another one") ||
+    text.includes("make me laugh") ||
+    text.includes("make me laugh please") ||
+    text.includes("tell me something funny") ||
+    text.includes("tell me something fun") ||
+    text.includes("say something funny") ||
+    text.includes("say something fun") ||
+    text.includes("give me a joke") ||
+    text.includes("give me some jokes") ||
+    text.includes("give me jokes") ||
+    text.includes("give me a funny joke") ||
+    text.includes("got any jokes") ||
+    text.includes("got a joke") ||
+    text.includes("do you know any jokes") ||
+    text.includes("do you know a joke") ||
+    text.includes("can you tell me a joke") ||
+    text.includes("can you tell me some jokes") ||
+    text.includes("can you make me laugh") ||
+    text.includes("i want a joke") ||
+    text.includes("i want some jokes") ||
+    text.includes("i need a laugh") ||
+    text.includes("i need something funny") ||
+    text.includes("i need a joke") ||
+    text.includes("funny joke") ||
+    text.includes("funny jokes")
+) {
+
+    const jokes = [
+
+        "Why did the computer go to the doctor? Because it had a virus! 😂💻",
+
+        "Why was the math book sad? Because it had too many problems. 😭📚",
+
+        "Why don't programmers like nature? It has too many bugs. 🐛😂",
+
+        "What do you call a sleeping computer? A nap-top. 😴💻",
+
+        "Why did the smartphone need glasses? Because it lost its contacts. 🤓📱",
+
+        "Why did the website break up with the server? It needed more space. 💔🌐",
+
+        "What did the Wi-Fi say to the phone? I feel a connection between us. 📶😂",
+
+        "Why was the keyboard always tired? It had too many shifts. 😴⌨️",
+
+        "Why did the computer sit in the corner? It needed some personal space. 😂💻",
+
+        "Why did the cookie go to the doctor? Because it felt crumby. 🍪😂",
+
+        "What did the ocean say to the beach? Nothing, it just waved. 🌊😂",
+
+        "Why was the calendar so popular? Because it had a lot of dates. 📅😂",
+
+        "Why did the computer get cold? It left its Windows open. 🥶💻",
+
+        "Why did the programmer prefer dark mode? Because light attracts bugs. 🐛🌙😂",
+
+        "Why did the AI go to school? To improve its neural network. 🤖📚",
+
+        "Why did the robot take a break? It needed to recharge its social battery. 🤖🔋😂",
+
+        "Why did the developer bring coffee to work? Because they needed a Java boost. ☕💻😂",
+
+        "Why did the website go to therapy? It had too many unresolved issues. 😂🌐",
+
+        "Why did the laptop go to the gym? It wanted better processing power. 💪💻😂",
+
+        "Why did the programmer bring two monitors? Because one wasn't enough to handle the drama. 😂🖥️",
+
+        "What did the HTML say to the CSS? You make me look good. 😎💻",
+
+        "Why did the browser break up with the website? Too many tabs in the relationship. 😂🌐",
+
+        "Why did the server stay calm? It had excellent backup. 😂💾",
+
+        "Why did the developer bring a ladder? They wanted to reach the next level. 🪜😂",
+
+        "Why did the bicycle fall over? Because it was two-tired. 🚲😂",
+
+        "Why don't eggs tell jokes? They might crack each other up. 🥚😂",
+
+        "What do you call cheese that isn't yours? Nacho cheese. 🧀😂",
+
+        "Why did the programmer quit his job? He didn't get arrays. 😂💻",
+
+        "What did one wall say to the other? I'll meet you at the corner. 😄",
+
+        "Why did the computer get promoted? It had outstanding performance. 😂💻",
+
+        "Why did the AI bring an umbrella? It heard there was a cloud coming. ☁️🤖😂",
+
+        "Why was the internet so confident? It knew everyone was connected to it. 😎🌐",
+
+        "Why did the keyboard talk to the mouse? It wanted to clear the air. 😂⌨️",
+
+        "Why did the robot go on vacation? It needed to reboot. 🤖🏖️",
+
+        "Why did the developer drink coffee at midnight? Because the bugs weren't sleeping. ☕🐛😂"
+
+    ];
+
+    return jokes[Math.floor(Math.random() * jokes.length)];
+}
     // ========================================
     // DEFAULT
     // ========================================
@@ -778,7 +1405,127 @@ if (
 ) {
     return "I can help you explore business ideas, websites, branding, marketing, customer research, pricing, startups and AI-powered digital experiences.";
 }
+// ========================================
+// RANDOM JOKES + MORE
+// ========================================
 
+const jokeRequest =
+    text === "joke" ||
+    text === "jokes" ||
+    text.includes("tell me a joke") ||
+    text.includes("tell me jokes") ||
+    text.includes("tell me some jokes") ||
+    text.includes("give me a joke") ||
+    text.includes("give me some jokes") ||
+    text.includes("give me jokes") ||
+    text.includes("make me laugh") ||
+    text.includes("tell me something funny") ||
+    text.includes("say something funny") ||
+    text.includes("got any jokes") ||
+    text.includes("do you know any jokes") ||
+    text.includes("can you tell me a joke") ||
+    text.includes("can you tell me some jokes") ||
+    text.includes("i need a joke") ||
+    text.includes("i need some jokes") ||
+    text.includes("funny joke") ||
+    text.includes("funny jokes");
+
+const moreRequest =
+    text === "more" ||
+    text === "another" ||
+    text === "another one" ||
+    text === "one more" ||
+    text === "one more joke" ||
+    text === "more joke" ||
+    text === "more jokes" ||
+    text === "tell me more" ||
+    text === "give me more" ||
+    text === "again" ||
+    text === "another joke" ||
+    text === "more please" ||
+    text === "one more please";
+
+if (jokeRequest || moreRequest) {
+
+    const jokes = [
+
+        "Why did the computer go to the doctor? Because it had a virus! 😂💻",
+
+        "Why was the math book sad? Because it had too many problems. 😭📚",
+
+        "Why don't programmers like nature? It has too many bugs. 🐛😂",
+
+        "What do you call a sleeping computer? A nap-top. 😴💻",
+
+        "Why did the smartphone need glasses? Because it lost its contacts. 🤓📱",
+
+        "Why did the website break up with the server? It needed more space. 💔🌐",
+
+        "What did the Wi-Fi say to the phone? I feel a connection between us. 📶😂",
+
+        "Why was the keyboard always tired? It had too many shifts. 😴⌨️",
+
+        "Why did the cookie go to the doctor? Because it felt crumby. 🍪😂",
+
+        "What did the ocean say to the beach? Nothing, it just waved. 🌊😂",
+
+        "Why was the calendar so popular? Because it had a lot of dates. 📅😂",
+
+        "Why did the computer get cold? It left its Windows open. 🥶💻",
+
+        "Why did the programmer prefer dark mode? Because light attracts bugs. 🐛🌙😂",
+
+        "Why did the AI go to school? To improve its neural network. 🤖📚",
+
+        "Why did the robot take a break? It needed to recharge its social battery. 🤖🔋😂",
+
+        "Why did the website go to therapy? It had too many unresolved issues. 😂🌐",
+
+        "Why did the laptop go to the gym? It wanted better processing power. 💪💻😂",
+
+        "Why did the developer bring two monitors? One wasn't enough to handle the drama. 😂🖥️",
+
+        "Why did the browser break up with the website? Too many tabs in the relationship. 😂🌐",
+
+        "Why did the developer bring a ladder? They wanted to reach the next level. 🪜😂",
+
+        "Why did the bicycle fall over? Because it was two-tired. 🚲😂",
+
+        "Why don't eggs tell jokes? They might crack each other up. 🥚😂",
+
+        "What do you call cheese that isn't yours? Nacho cheese. 🧀😂",
+
+        "Why did the programmer quit his job? He didn't get arrays. 😂💻",
+
+        "What did one wall say to the other? I'll meet you at the corner. 😄",
+
+        "Why did the computer get promoted? It had outstanding performance. 😂💻",
+
+        "Why did the AI bring an umbrella? It heard there was a cloud coming. ☁️🤖😂",
+
+        "Why did the robot go on vacation? It needed to reboot. 🤖🏖️",
+
+        "Why did the developer drink coffee at midnight? Because the bugs weren't sleeping. ☕🐛😂",
+
+        "Why did the computer need a vacation? It had too many tabs open. 😂💻",
+
+        "Why did the phone wear a jacket? Because it had a cold call. 📱😂",
+
+        "Why did the server get invited to every party? Because it always hosted. 🎉💻😂",
+
+        "Why did the code go to school? It wanted to improve its syntax. 📚💻😂",
+
+        "Why did the developer sit near the window? They wanted better cloud access. ☁️😂"
+
+    ];
+
+    const randomJoke =
+        jokes[Math.floor(Math.random() * jokes.length)];
+
+    lastResponseWasJoke = true;
+
+    return randomJoke;
+}
 
 // DEFAULT RESPONSE
 
