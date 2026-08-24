@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact — Nasif Rahman</title>
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: #050505;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .contact-page {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+            box-sizing: border-box;
+        }
+
+        .contact-page h1 {
+            margin-bottom: 10px;
+            font-size: 42px;
+        }
+
+        .contact-page p {
+            margin-bottom: 35px;
+            opacity: 0.7;
+        }
+
+        .contact-options {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            width: 100%;
+            max-width: 430px;
+        }
+
+        .contact-option {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            padding: 20px 24px;
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: 16px;
+            text-decoration: none;
+            color: white;
+            transition: 0.3s ease;
+        }
+
+        .contact-option:hover {
+            transform: translateY(-4px);
+            border-color: #00ffff;
+            box-shadow: 0 0 20px rgba(0,255,255,0.2);
+        }
+
+        .contact-icon {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .contact-icon i {
+            font-size: 30px;
+        }
+
+        .contact-text {
+            text-align: left;
+        }
+
+        .contact-text strong {
+            display: block;
+            font-size: 17px;
+            margin-bottom: 5px;
+        }
+
+        .contact-text span {
+            font-size: 13px;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="contact-page">
+
+        <h1>Let's Connect</h1>
+
+        <p>Choose a platform to connect with me.</p>
+
+        <div class="contact-options">
+
+            <!-- INSTAGRAM -->
+            <a
+                href="https://www.instagram.com/mugdho_664/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="contact-option"
+            >
+                <div class="contact-icon">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+
+                <div class="contact-text">
+                    <strong>Instagram</strong>
+                    <span>@mugdho_664</span>
+                </div>
+            </a>
+
+
+            <!-- FACEBOOK -->
+            <a
+                href="https://www.facebook.com/nasif2009"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="contact-option"
+            >
+                <div class="contact-icon">
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+
+                <div class="contact-text">
+                    <strong>Facebook</strong>
+                    <span>@nasif2009</span>
+                </div>
+            </a>
+
+
+            <!-- GMAIL -->
+            <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=nasifr293@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="contact-option"
+            >
+                <div class="contact-icon">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+
+                <div class="contact-text">
+                    <strong>Gmail</strong>
+                    <span>nasifr293@gmail.com</span>
+                </div>
+            </a>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>
