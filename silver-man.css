@@ -2058,4 +2058,254 @@ h2 span {
     font-size: 12px;
 
     line-height: 1.7;
+}/* ========================================
+   VINTAGE SILVER TEXT THEME
+   ======================================== */
+
+body {
+    color: #c8c8c8;
+}
+
+
+/* Main headings */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #c7c7c7;
+}
+
+
+/* Strong text */
+
+strong {
+    color: #d0d0d0;
+}
+
+
+/* Normal paragraphs */
+
+p {
+    color: #a9a9a9;
+}
+
+
+/* Navigation */
+
+.nav-links a,
+.logo {
+    color: #c5c5c5;
+}
+
+
+/* Hero text */
+
+.hero h1,
+.hero h1 span {
+    color: #cfcfcf;
+}
+
+.hero-tagline {
+    color: #b8b8b8;
+}
+
+.hero-description {
+    color: #9f9f9f;
+}
+
+
+/* Section headings */
+
+.section-heading h2,
+.about-grid h2,
+.training-heading h2,
+.cta-section h2 {
+    color: #c9c9c9;
+}
+
+
+/* Highlighted heading words */
+
+.section-heading h2 span,
+.training-heading h2 span,
+.about-grid h2 span,
+.cta-section h2 span {
+    color: #bdbdbd;
+}
+
+
+/* Cards */
+
+.level-card h3,
+.program-card h3,
+.trainer-card h3,
+.membership-card h3 {
+    color: #c8c8c8;
+}
+
+
+/* Card descriptions */
+
+.level-card p,
+.program-card p,
+.trainer-card p,
+.membership-card p {
+    color: #9f9f9f;
+}
+
+
+/* Training browser */
+
+.training-browser-heading h3,
+.exercise-heading h3,
+.exercise-detail-header h3 {
+    color: #c9c9c9;
+}
+
+
+/* Muscle names */
+
+.muscle-card strong {
+    color: #c6c6c6;
+}
+
+
+/* Exercise names */
+
+.exercise-info h4 {
+    color: #c8c8c8;
+}
+
+
+/* Exercise details */
+
+.exercise-detail-card h4 {
+    color: #d0d0d0;
+}
+
+.exercise-detail-card p {
+    color: #a5a5a5;
+}
+
+
+/* Premium section */
+
+.premium-unlock h3 {
+    color: #c8c8c8;
+}
+
+.premium-unlock h3 strong {
+    color: #d2d2d2;
+}
+
+.premium-unlock p {
+    color: #a3a3a3;
+}
+
+
+/* Membership prices */
+
+.price {
+    color: #d0d0d0;
+}
+
+.price span {
+    color: #909090;
+}
+
+
+/* Footer */
+
+.footer,
+.footer p {
+    color: #9d9d9d;
+}
+
+
+/* ========================================
+   METALLIC SILVER EFFECT
+   ======================================== */
+
+h1,
+h2,
+h3,
+h4,
+.logo,
+.level-card h3,
+.program-card h3,
+.trainer-card h3,
+.membership-card h3,
+.exercise-info h4,
+.exercise-detail-card h4 {
+
+    background: linear-gradient(
+        180deg,
+        #f4f4f4 0%,
+        #d8d8d8 25%,
+        #8d8d8d 50%,
+        #eeeeee 72%,
+        #a5a5a5 100%
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    background-clip: text;
+}
+
+
+/* Keep buttons readable */
+
+.primary-btn,
+.secondary-btn,
+.nav-btn,
+.membership-btn,
+.unlock-btn,
+.back-training {
+    -webkit-text-fill-color: initial;
+}
+
+
+/* Small labels */
+
+.eyebrow,
+.section-label,
+.detail-label,
+.featured-label {
+    color: #999999;
+}
+
+
+/* Silver hover */
+
+.nav-links a:hover,
+.logo:hover {
+    color: #eeeeee;
+}/* ========================================
+   SILVER MAN VINTAGE LOGO
+   ======================================== */
+
+.logo {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+.logo .silver-text {
+    color: #b8bcc2;
+    text-shadow:
+        1px 1px 0 #e4e6e8,
+        -1px -1px 0 #777b80,
+        0 0 6px rgba(190, 194, 200, 0.35);
+}
+
+.logo .man-text {
+    color: #8b1e24;
+    text-shadow:
+        1px 1px 0 #4d0e12,
+        0 0 5px rgba(139, 30, 36, 0.25);
 }

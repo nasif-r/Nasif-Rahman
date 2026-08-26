@@ -1894,3 +1894,538 @@ footer {
     }
 }
 ```
+/* ========================================
+   PROJECT 02 — SILVER MAN
+   ======================================== */
+
+.project-two {
+    position: relative;
+    overflow: hidden;
+    min-height: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:
+        linear-gradient(145deg, #181818 0%, #0d0d0d 55%, #050505 100%);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+
+/* Subtle background grid */
+
+.project-two::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background-image:
+        linear-gradient(
+            rgba(255, 255, 255, 0.035) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0.035) 1px,
+            transparent 1px
+        );
+
+    background-size: 38px 38px;
+
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+
+/* Silver glow */
+
+.project-two::after {
+    content: "";
+
+    position: absolute;
+    width: 220px;
+    height: 220px;
+
+    background: radial-gradient(
+        circle,
+        rgba(210, 210, 210, 0.12) 0%,
+        rgba(210, 210, 210, 0.04) 35%,
+        transparent 70%
+    );
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    pointer-events: none;
+}
+
+
+/* ========================================
+   MAIN SILVER MAN INTERFACE
+   ======================================== */
+
+.silverman-interface {
+
+    position: relative;
+    z-index: 2;
+
+    width: 82%;
+    max-width: 520px;
+
+    min-height: 235px;
+
+    padding: 32px;
+
+    display: flex;
+    align-items: center;
+    gap: 28px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.09),
+            rgba(255, 255, 255, 0.025)
+        );
+
+    border: 1px solid rgba(255, 255, 255, 0.14);
+
+    box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.45),
+        inset 0 1px 0 rgba(255, 255, 255, 0.08);
+
+    backdrop-filter: blur(10px);
+
+    transition:
+        transform 0.4s ease,
+        border-color 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+
+/* Hover */
+
+.project-card:hover .silverman-interface {
+
+    transform: translateY(-6px);
+
+    border-color: rgba(255, 255, 255, 0.28);
+
+    box-shadow:
+        0 30px 80px rgba(0, 0, 0, 0.55),
+        0 0 40px rgba(255, 255, 255, 0.05);
+}
+
+
+/* ========================================
+   SILVER MAN LOGO
+   ======================================== */
+
+.silverman-interface-mark {
+
+    position: relative;
+
+    flex-shrink: 0;
+
+    width: 92px;
+    height: 92px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    background:
+        linear-gradient(
+            145deg,
+            #dcdcdc,
+            #777777
+        );
+
+    box-shadow:
+        0 0 30px rgba(255, 255, 255, 0.08),
+        inset 0 1px 2px rgba(255, 255, 255, 0.5);
+
+    transform: rotate(-4deg);
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+
+.project-card:hover .silverman-interface-mark {
+
+    transform: rotate(0deg) scale(1.05);
+
+    box-shadow:
+        0 0 40px rgba(255, 255, 255, 0.14),
+        inset 0 1px 2px rgba(255, 255, 255, 0.6);
+}
+
+
+.silverman-interface-mark::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 6px;
+
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+
+.silverman-interface-mark span {
+
+    position: relative;
+    z-index: 2;
+
+    font-size: 27px;
+    font-weight: 900;
+
+    letter-spacing: -2px;
+
+    color: #111;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+}
+
+
+/* ========================================
+   SILVER MAN TEXT
+   ======================================== */
+
+.silverman-interface-info {
+
+    flex: 1;
+    min-width: 0;
+}
+
+
+.silverman-mini-label {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    color: rgba(255, 255, 255, 0.55);
+}
+
+
+.silverman-interface-info h4 {
+
+    margin: 0 0 18px;
+
+    font-size: clamp(20px, 2.4vw, 28px);
+
+    line-height: 1.1;
+
+    font-weight: 700;
+
+    color: #ffffff;
+}
+
+
+/* ========================================
+   FEATURE POINTS
+   ======================================== */
+
+.silverman-points {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 8px 18px;
+}
+
+
+.silverman-points p {
+
+    margin: 0;
+
+    font-size: 10px;
+
+    letter-spacing: 0.5px;
+
+    color: rgba(255, 255, 255, 0.58);
+
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.project-card:hover .silverman-points p {
+
+    color: rgba(255, 255, 255, 0.85);
+}
+
+
+.silverman-points p:hover {
+
+    transform: translateX(4px);
+}
+
+
+/* ========================================
+   PROJECT LABEL
+   ======================================== */
+
+.project-two .project-label {
+
+    position: absolute;
+
+    left: 24px;
+    bottom: 20px;
+
+    z-index: 4;
+
+    font-size: 9px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    color: rgba(255, 255, 255, 0.42);
+}
+
+
+/* ========================================
+   PROJECT NUMBER
+   ======================================== */
+
+.project-two .project-number {
+
+    position: absolute;
+
+    right: 24px;
+    bottom: 18px;
+
+    z-index: 4;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    color: rgba(255, 255, 255, 0.45);
+}
+
+
+/* ========================================
+   PROJECT CONTENT
+   ======================================== */
+
+.project-card .project-content {
+
+    position: relative;
+}
+
+
+.project-card .project-tech {
+
+    margin-top: 18px;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+
+    color: rgba(255, 255, 255, 0.45);
+}
+
+
+/* ========================================
+   MOBILE
+   ======================================== */
+
+@media (max-width: 700px) {
+
+    .project-two {
+        min-height: 320px;
+    }
+
+    .silverman-interface {
+
+        width: 86%;
+
+        padding: 24px;
+
+        gap: 20px;
+
+        min-height: 205px;
+    }
+
+    .silverman-interface-mark {
+
+        width: 70px;
+        height: 70px;
+    }
+
+    .silverman-interface-mark span {
+
+        font-size: 21px;
+    }
+
+    .silverman-interface-info h4 {
+
+        font-size: 20px;
+
+        margin-bottom: 14px;
+    }
+
+    .silverman-points {
+
+        grid-template-columns: 1fr;
+
+        gap: 6px;
+    }
+
+    .silverman-points p {
+
+        font-size: 9px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .project-two {
+        min-height: 300px;
+    }
+
+    .silverman-interface {
+
+        width: 88%;
+
+        padding: 20px;
+
+        gap: 15px;
+    }
+
+    .silverman-interface-mark {
+
+        width: 60px;
+        height: 60px;
+    }
+
+    .silverman-interface-mark span {
+
+        font-size: 18px;
+    }
+
+    .silverman-mini-label {
+
+        font-size: 8px;
+
+        letter-spacing: 2px;
+    }
+
+    .silverman-interface-info h4 {
+
+        font-size: 17px;
+    }
+
+    .silverman-points p {
+
+        font-size: 8px;
+    }
+
+}.silverman-interface-mark {
+    position: relative;
+    flex-shrink: 0;
+
+    width: 150px;
+    height: 110px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: transparent;
+
+    transform: rotate(-3deg);
+
+    transition:
+        transform 0.4s ease,
+        filter 0.4s ease;
+}
+
+.project-card:hover .silverman-interface-mark {
+    transform: rotate(0deg) scale(1.05);
+    filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.12));
+}
+
+
+/* SILVER */
+
+.silverman-interface-mark span {
+
+    display: block;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 27px;
+    font-weight: 900;
+
+    font-style: italic;
+
+    letter-spacing: 1px;
+
+    color: #c8c8c8;
+
+    text-shadow:
+        1px 1px 0 #ffffff,
+        2px 2px 0 #777,
+        3px 3px 0 #444;
+
+    line-height: 0.9;
+}
+
+
+/* MAN */
+
+.silverman-interface-mark strong {
+
+    display: block;
+
+    margin-top: 3px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 31px;
+    font-weight: 900;
+
+    font-style: italic;
+
+    letter-spacing: 2px;
+
+    color: #b51f2a;
+
+    text-shadow:
+        1px 1px 0 #e04a52,
+        2px 2px 0 #641019,
+        3px 3px 0 #35070b;
+
+    line-height: 0.9;
+}
