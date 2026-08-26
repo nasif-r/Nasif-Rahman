@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nasif-r.github.io/Nasif-Rahman/sitemap.xml
