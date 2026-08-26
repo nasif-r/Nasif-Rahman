@@ -1,0 +1,2061 @@
+/* ========================================
+   SILVER MAN — VINTAGE FITNESS
+   ======================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap');
+
+
+/* ========================================
+   RESET
+   ======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #100908;
+    color: #eee5dc;
+    font-family: "DM Sans", sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+
+/* ========================================
+   NAVBAR
+   ======================================== */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    background: rgba(16, 9, 8, 0.92);
+    backdrop-filter: blur(14px);
+
+    border-bottom: 1px solid rgba(150, 35, 35, 0.25);
+}
+
+.nav-container {
+    width: min(1250px, 100%);
+    margin: auto;
+    padding: 22px 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: #9e2929;
+}
+
+.nav-links {
+    display: flex;
+    gap: 32px;
+}
+
+.nav-links a {
+    color: #a99b93;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #c33a3a;
+}
+
+.nav-btn {
+    padding: 11px 21px;
+
+    border: 1px solid #792323;
+    border-radius: 2px;
+
+    color: #eee5dc;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    transition: 0.3s ease;
+}
+
+.nav-btn:hover {
+    background: #8f2828;
+    border-color: #8f2828;
+}
+
+
+/* ========================================
+   HERO
+   ======================================== */
+
+.hero {
+    min-height: 100vh;
+    width: min(1250px, 100%);
+    margin: auto;
+
+    padding: 150px 35px 90px;
+
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    align-items: center;
+    gap: 80px;
+
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    background: rgba(120, 25, 25, 0.12);
+    filter: blur(120px);
+
+    top: 10%;
+    right: 5%;
+
+    pointer-events: none;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.eyebrow {
+    color: #a83232;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 4px;
+    text-transform: uppercase;
+
+    margin-bottom: 22px;
+}
+
+.hero h1 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: clamp(80px, 10vw, 145px);
+    line-height: 0.78;
+
+    letter-spacing: -5px;
+    text-transform: uppercase;
+
+    color: #f0e8df;
+}
+
+.hero h1 span {
+    display: block;
+    color: #8f2929;
+}
+
+.hero-description {
+    max-width: 540px;
+
+    margin-top: 38px;
+
+    color: #a99b93;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 14px;
+    margin-top: 35px;
+}
+
+.primary-btn,
+.secondary-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+
+    padding: 14px 23px;
+
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    transition: 0.3s ease;
+}
+
+.primary-btn {
+    background: #8e2828;
+    color: #fff;
+
+    border: 1px solid #8e2828;
+}
+
+.primary-btn:hover {
+    background: #aa3030;
+    border-color: #aa3030;
+}
+
+.secondary-btn {
+    border: 1px solid #50312e;
+    color: #d9ccc4;
+}
+
+.secondary-btn:hover {
+    border-color: #9e2929;
+    color: #fff;
+}
+
+.hero-image {
+    position: relative;
+}
+
+.hero-image::before {
+    content: "SILVER MAN";
+    position: absolute;
+
+    top: -30px;
+    right: -10px;
+
+    color: rgba(175, 45, 45, 0.12);
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: 75px;
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+.hero-image img {
+    height: 650px;
+    object-fit: cover;
+
+    filter: saturate(0.7) contrast(1.08);
+
+    border: 1px solid #4a211f;
+}
+
+.hero-tagline {
+    margin-top: 20px;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: 25px;
+
+    color: #c6b7ad;
+}
+
+
+/* ========================================
+   COMMON SECTIONS
+   ======================================== */
+
+.section {
+    width: min(1250px, 100%);
+    margin: auto;
+
+    padding: 140px 35px;
+}
+
+.section-label {
+    margin-bottom: 55px;
+
+    color: #7f6f68;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.section h2 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: clamp(55px, 7vw, 100px);
+    line-height: 0.9;
+
+    letter-spacing: -3px;
+    text-transform: uppercase;
+}
+
+.section h2 span {
+    display: block;
+    color: #8e2929;
+}
+
+
+/* ========================================
+   ABOUT
+   ======================================== */
+
+.about-section {
+    border-top: 1px solid #291817;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 100px;
+    align-items: start;
+}
+
+.about-text {
+    padding-top: 10px;
+}
+
+.about-text p {
+    color: #a99b93;
+    font-size: 15px;
+    line-height: 1.9;
+
+    margin-bottom: 25px;
+}
+
+
+/* ========================================
+   PROGRAMS
+   ======================================== */
+
+.programs-section {
+    background: #130a09;
+}
+
+.programs-section > h2 {
+    margin-bottom: 75px;
+}
+
+.programs-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.program-card {
+    min-height: 280px;
+
+    padding: 35px;
+
+    border: 1px solid #33201e;
+
+    position: relative;
+
+    transition: 0.3s ease;
+}
+
+.program-card:hover {
+    background: #1b0d0c;
+    border-color: #762626;
+}
+
+.program-card > span {
+    color: #8e2929;
+
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.program-card h3 {
+    margin-top: 80px;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: 34px;
+
+    text-transform: uppercase;
+}
+
+.program-card p {
+    margin-top: 12px;
+
+    max-width: 420px;
+
+    color: #8f8179;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+
+/* ========================================
+   TRAINERS
+   ======================================== */
+
+.section-heading {
+    margin-bottom: 70px;
+}
+
+.trainers-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.trainer-card {
+    border-bottom: 1px solid #3a211f;
+    padding-bottom: 22px;
+}
+
+.trainer-image {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.trainer-image img {
+    height: 430px;
+    object-fit: cover;
+
+    filter: grayscale(35%) saturate(0.7);
+
+    transition: 0.5s ease;
+}
+
+.trainer-card:hover img {
+    transform: scale(1.04);
+}
+
+.trainer-card h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 27px;
+
+    text-transform: uppercase;
+}
+
+.trainer-card p {
+    margin-top: 3px;
+
+    color: #927f77;
+
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+/* ========================================
+   STATS
+   ======================================== */
+
+.stats-section {
+    width: 100%;
+
+    padding: 75px 35px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    background: #8b2727;
+
+    border-top: 1px solid #a43a3a;
+    border-bottom: 1px solid #a43a3a;
+}
+
+.stat {
+    text-align: center;
+
+    border-right: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.stat:last-child {
+    border-right: none;
+}
+
+.stat strong {
+    display: block;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+
+    line-height: 1;
+    letter-spacing: -2px;
+}
+
+.stat span {
+    display: block;
+
+    margin-top: 8px;
+
+    font-size: 9px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+
+/* ========================================
+   MEMBERSHIP
+   ======================================== */
+
+.membership-section {
+    background: #100908;
+}
+
+.membership-section > h2 {
+    margin-bottom: 70px;
+}
+
+.membership-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.membership-card {
+    padding: 42px 35px;
+
+    min-height: 360px;
+
+    border: 1px solid #35201e;
+
+    position: relative;
+}
+
+.membership-card.featured {
+    border-color: #8e2929;
+    background: #180b0a;
+}
+
+.featured-label {
+    color: #b63737;
+
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.membership-card h3 {
+    margin-top: 35px;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: 38px;
+
+    text-transform: uppercase;
+}
+
+.price {
+    margin: 18px 0;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: 45px;
+}
+
+.price span {
+    color: #766761;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 10px;
+}
+
+.membership-card > p:not(.featured-label):not(.price) {
+    color: #93847c;
+    font-size: 13px;
+}
+
+.membership-btn {
+    position: absolute;
+    bottom: 35px;
+    left: 35px;
+    right: 35px;
+
+    padding: 13px;
+
+    border: 1px solid #54201f;
+
+    text-align: center;
+
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    transition: 0.3s ease;
+}
+
+.membership-btn:hover {
+    background: #8e2929;
+    border-color: #8e2929;
+}
+
+
+/* ========================================
+   CTA
+   ======================================== */
+
+.cta-section {
+    padding: 170px 35px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(16, 9, 8, 0.82),
+            rgba(16, 9, 8, 0.92)
+        );
+
+    border-top: 1px solid #38201e;
+}
+
+.cta-section h2 {
+    max-width: 950px;
+    margin: 25px auto 45px;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(65px, 9vw, 120px);
+
+    line-height: 0.85;
+    letter-spacing: -4px;
+}
+
+.cta-section h2 span {
+    color: #9b2b2b;
+}
+
+
+/* ========================================
+   FOOTER
+   ======================================== */
+
+.footer {
+    width: min(1250px, 100%);
+    margin: auto;
+
+    padding: 45px 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-top: 1px solid #2c1a18;
+}
+
+.footer p {
+    color: #665851;
+
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+
+/* ========================================
+   MOBILE
+   ======================================== */
+
+@media (max-width: 900px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 55px;
+
+        padding-top: 130px;
+    }
+
+    .hero h1 {
+        font-size: clamp(70px, 17vw, 115px);
+    }
+
+    .hero-image {
+        max-width: 600px;
+    }
+
+    .hero-image img {
+        height: 550px;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .trainers-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .membership-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stats-section {
+        grid-template-columns: 1fr 1fr;
+        gap: 35px;
+    }
+
+    .stat:nth-child(2) {
+        border-right: none;
+    }
+
+    .stat:nth-child(-n + 2) {
+        padding-bottom: 25px;
+        border-bottom: 1px solid rgba(255,255,255,0.18);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .nav-container {
+        padding: 18px 20px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .nav-btn {
+        padding: 9px 15px;
+    }
+
+    .hero {
+        padding: 125px 20px 70px;
+    }
+
+    .hero h1 {
+        font-size: 78px;
+        letter-spacing: -3px;
+    }
+
+    .hero-description {
+        font-size: 14px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        justify-content: center;
+    }
+
+    .hero-image img {
+        height: 430px;
+    }
+
+    .hero-image::before {
+        font-size: 42px;
+    }
+
+    .section {
+        padding: 100px 20px;
+    }
+
+    .section h2 {
+        font-size: 55px;
+        letter-spacing: -2px;
+    }
+
+    .programs-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .program-card {
+        min-height: 245px;
+    }
+
+    .program-card h3 {
+        margin-top: 55px;
+    }
+
+    .trainers-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .trainer-image img {
+        height: 420px;
+    }
+
+    .stats-section {
+        grid-template-columns: 1fr 1fr;
+        padding: 55px 20px;
+    }
+
+    .stat strong {
+        font-size: 42px;
+    }
+
+    .stat span {
+        font-size: 8px;
+        letter-spacing: 2px;
+    }
+
+    .cta-section {
+        padding: 120px 20px;
+    }
+
+    .cta-section h2 {
+        font-size: 65px;
+    }
+
+    .footer {
+        padding: 35px 20px;
+
+        flex-direction: column;
+        gap: 20px;
+
+        text-align: center;
+    }
+}/* ========================================
+   CODE-BASED FITNESS VISUAL
+   ======================================== */
+
+.fitness-visual {
+    height: 650px;
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #632020 0%,
+            #351313 38%,
+            #160b0a 72%,
+            #100908 100%
+        );
+
+    border: 1px solid #54201f;
+}
+
+.fitness-visual::before {
+    content: "";
+    position: absolute;
+
+    width: 430px;
+    height: 430px;
+
+    border: 1px solid rgba(190, 65, 65, 0.35);
+    border-radius: 50%;
+}
+
+.fitness-visual::after {
+    content: "TRAIN HARD";
+
+    position: absolute;
+    bottom: 35px;
+    left: 35px;
+
+    color: rgba(238, 229, 220, 0.12);
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: 80px;
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+.visual-line {
+    position: absolute;
+
+    width: 1px;
+    height: 100%;
+
+    background: rgba(210, 170, 150, 0.12);
+}
+
+.visual-content {
+    position: relative;
+    z-index: 2;
+
+    text-align: center;
+}
+
+.visual-content span {
+    display: block;
+
+    margin-bottom: 15px;
+
+    color: #d19a8e;
+
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 6px;
+}
+
+.visual-content strong {
+    display: block;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(70px, 9vw, 125px);
+
+    line-height: 0.8;
+    letter-spacing: -4px;
+
+    color: #eee5dc;
+}
+
+.visual-content small {
+    display: block;
+
+    margin-top: 25px;
+
+    color: #a83232;
+
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.visual-number {
+    position: absolute;
+
+    top: 30px;
+    right: 30px;
+
+    color: #8e2929;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: 55px;
+    font-weight: 700;
+}
+
+@media (max-width: 600px) {
+
+    .fitness-visual {
+        height: 430px;
+    }
+
+    .fitness-visual::after {
+        font-size: 48px;
+    }
+
+    .visual-content strong {
+        font-size: 75px;
+    }
+}/* ========================================
+   SILVER MAN — PREMIUM VINTAGE BASE
+   ======================================== */
+
+:root {
+    --silver-bg: #0b0807;
+    --silver-panel: #120c0b;
+    --silver-panel-2: #180d0c;
+    --silver-red: #8f2929;
+    --silver-red-light: #b43a36;
+    --silver-text: #eee5dc;
+    --silver-muted: #887770;
+    --silver-border: #34201d;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background: var(--silver-bg);
+    color: var(--silver-text);
+}
+
+
+::selection {
+    background: var(--silver-red);
+    color: #fff;
+}
+
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+button {
+    font-family: inherit;
+}
+
+
+.section {
+    position: relative;
+    padding: 110px 7%;
+}
+
+
+.section-label {
+    margin-bottom: 35px;
+
+    color: var(--silver-red-light);
+
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+
+.eyebrow {
+    color: var(--silver-red-light);
+
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+
+/* MAIN HEADINGS */
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Cormorant Garamond", Georgia, serif;
+}
+
+
+h2 {
+    font-size: clamp(45px, 6vw, 82px);
+    line-height: 0.9;
+    text-transform: uppercase;
+}
+
+
+h2 span {
+    display: block;
+    color: var(--silver-red-light);
+}
+
+
+/* BUTTONS */
+
+.primary-btn,
+.secondary-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 14px 22px;
+
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    transition: 0.3s ease;
+}
+
+
+.primary-btn {
+    background: var(--silver-red);
+    border: 1px solid var(--silver-red);
+    color: #fff;
+}
+
+
+.primary-btn:hover {
+    background: var(--silver-red-light);
+    border-color: var(--silver-red-light);
+    transform: translateY(-3px);
+}
+
+
+.secondary-btn {
+    border: 1px solid var(--silver-border);
+    color: var(--silver-text);
+}
+
+
+.secondary-btn:hover {
+    border-color: var(--silver-red);
+    color: var(--silver-red-light);
+    transform: translateY(-3px);
+}/* ========================================
+   TRAINING LEVEL CARDS — FIX
+   ======================================== */
+
+.training-levels {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 18px !important;
+    width: 100% !important;
+    margin-top: 35px !important;
+}
+
+.level-card {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+
+    min-height: 260px !important;
+    padding: 30px !important;
+
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    align-items: flex-start !important;
+
+    background: #120c0b !important;
+    border: 1px solid #34201d !important;
+
+    color: #eee5dc !important;
+    text-align: left !important;
+
+    cursor: pointer !important;
+}
+
+.level-card:hover {
+    border-color: #8f2929 !important;
+    background: #180d0c !important;
+    transform: translateY(-5px);
+}
+
+.level-card span {
+    display: block !important;
+
+    color: #b43a36 !important;
+
+    font-size: 10px !important;
+    letter-spacing: 3px !important;
+}
+
+.level-card h3 {
+    display: block !important;
+
+    margin: 20px 0 10px !important;
+
+    color: #eee5dc !important;
+
+    font-family: "Cormorant Garamond", Georgia, serif !important;
+    font-size: 34px !important;
+
+    text-transform: uppercase !important;
+}
+
+.level-card p {
+    display: block !important;
+
+    color: #887770 !important;
+
+    font-size: 12px !important;
+    line-height: 1.7 !important;
+}
+
+.level-card strong {
+    display: block !important;
+
+    margin-top: 25px !important;
+
+    color: #b43a36 !important;
+
+    font-size: 9px !important;
+    letter-spacing: 2px !important;
+    text-transform: uppercase !important;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .training-levels {
+        grid-template-columns: 1fr !important;
+    }
+
+}/* MUSCLE OPTIONS — VERTICAL */
+
+.muscle-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+    width: 100% !important;
+}
+
+.muscle-card {
+    width: 100% !important;
+    min-height: 90px !important;
+
+    display: grid !important;
+    grid-template-columns: 60px 1fr auto !important;
+    align-items: center !important;
+
+    padding: 20px 25px !important;
+}
+
+.muscle-card strong {
+    margin: 0 !important;
+}
+
+.muscle-card small {
+    justify-self: end;
+}/* ========================================
+   PREMIUM BUTTON — VINTAGE LUXURY
+   ======================================== */
+
+.unlock-btn {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+
+    min-width: 310px !important;
+    min-height: 82px !important;
+
+    padding: 22px 38px !important;
+
+    background: #5d1515 !important;
+
+    border: 2px solid #a83a32 !important;
+
+    color: #f5e8d8 !important;
+
+    font-family: Georgia, "Times New Roman", serif !important;
+
+    font-size: 18px !important;
+    font-weight: 900 !important;
+
+    letter-spacing: 3px !important;
+
+    text-transform: uppercase;
+
+    text-shadow:
+        0 2px 4px rgba(0, 0, 0, 0.8);
+
+    cursor: pointer;
+
+    box-shadow:
+        0 0 15px rgba(180, 50, 35, 0.4),
+        inset 0 0 20px rgba(0, 0, 0, 0.35);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* VINTAGE GOLD INNER BORDER */
+
+.unlock-btn {
+    outline: 1px solid rgba(214, 164, 95, 0.45);
+    outline-offset: -7px;
+}
+
+
+/* HOVER */
+
+.unlock-btn:hover {
+
+    transform: translateY(-4px) scale(1.03);
+
+    box-shadow:
+        0 0 20px rgba(255, 70, 20, 0.65),
+        0 0 45px rgba(180, 45, 25, 0.45),
+        inset 0 0 25px rgba(0, 0, 0, 0.3);
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .unlock-btn {
+        min-width: 90% !important;
+        font-size: 15px !important;
+        letter-spacing: 2px !important;
+        padding: 20px 25px !important;
+    }
+
+}/* ========================================
+   SILVER MAN PREMIUM FIRE BUTTON
+   ======================================== */
+
+.unlock-btn {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+
+    width: 330px !important;
+    min-height: 82px !important;
+
+    padding: 22px 35px !important;
+
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+
+    background: #641515 !important;
+
+    border: 2px solid #a83a32 !important;
+
+    color: #f5e8d8 !important;
+
+    font-family: "Cormorant Garamond", Georgia, serif !important;
+    font-size: 20px !important;
+    font-weight: 700 !important;
+
+    letter-spacing: 3px !important;
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    outline: 1px solid rgba(210, 160, 90, 0.4);
+    outline-offset: -7px;
+
+    box-shadow:
+        0 0 15px rgba(180, 45, 30, 0.45),
+        0 0 35px rgba(120, 20, 15, 0.35);
+
+    animation: premiumFireGlow 1.2s ease-in-out infinite;
+
+    transition: 0.3s ease;
+}
+
+
+/* FIRE LIGHT */
+
+.unlock-btn::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: -10%;
+    bottom: -70%;
+
+    width: 120%;
+    height: 150%;
+
+    background:
+        radial-gradient(
+            ellipse at 20% 100%,
+            rgba(255, 210, 70, 0.9),
+            rgba(255, 70, 15, 0.65) 22%,
+            transparent 50%
+        ),
+        radial-gradient(
+            ellipse at 50% 100%,
+            rgba(255, 230, 100, 0.9),
+            rgba(255, 60, 10, 0.7) 20%,
+            transparent 52%
+        ),
+        radial-gradient(
+            ellipse at 80% 100%,
+            rgba(255, 190, 50, 0.9),
+            rgba(255, 50, 10, 0.65) 22%,
+            transparent 50%
+        );
+
+    filter: blur(5px);
+
+    animation: flameMove 0.65s ease-in-out infinite alternate;
+
+    pointer-events: none;
+
+    z-index: -1;
+}
+
+
+/* SECOND FLAME */
+
+.unlock-btn::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 10%;
+    bottom: -45%;
+
+    width: 80%;
+    height: 110%;
+
+    background:
+        radial-gradient(
+            ellipse at 30% 100%,
+            rgba(255, 245, 150, 0.9),
+            rgba(255, 90, 10, 0.7) 25%,
+            transparent 55%
+        ),
+        radial-gradient(
+            ellipse at 70% 100%,
+            rgba(255, 220, 100, 0.85),
+            rgba(255, 60, 10, 0.65) 25%,
+            transparent 55%
+        );
+
+    filter: blur(3px);
+
+    animation: flameMove2 0.45s ease-in-out infinite alternate;
+
+    pointer-events: none;
+
+    z-index: -1;
+}
+
+
+/* FIRE MOVEMENT */
+
+@keyframes flameMove {
+
+    0% {
+        transform:
+            translateY(8px)
+            scaleX(0.94)
+            skewX(-3deg);
+    }
+
+    50% {
+        transform:
+            translateY(-8px)
+            scaleX(1.05)
+            skewX(3deg);
+    }
+
+    100% {
+        transform:
+            translateY(3px)
+            scaleX(0.98)
+            skewX(-2deg);
+    }
+
+}
+
+
+@keyframes flameMove2 {
+
+    0% {
+        transform:
+            translateY(5px)
+            scaleX(0.95);
+    }
+
+    50% {
+        transform:
+            translateY(-12px)
+            scaleX(1.05);
+    }
+
+    100% {
+        transform:
+            translateY(-3px)
+            scaleX(0.98);
+    }
+
+}
+
+
+/* FIRE GLOW */
+
+@keyframes premiumFireGlow {
+
+    0%,
+    100% {
+        box-shadow:
+            0 0 12px rgba(255, 70, 20, 0.4),
+            0 0 30px rgba(180, 40, 20, 0.25);
+    }
+
+    50% {
+        box-shadow:
+            0 0 25px rgba(255, 80, 20, 0.75),
+            0 0 50px rgba(200, 45, 20, 0.5),
+            0 0 75px rgba(150, 25, 15, 0.3);
+    }
+
+}
+
+
+/* HOVER */
+
+.unlock-btn:hover {
+
+    transform: translateY(-4px) scale(1.04);
+
+    box-shadow:
+        0 0 30px rgba(255, 80, 20, 0.8),
+        0 0 60px rgba(200, 40, 20, 0.5);
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .unlock-btn {
+        width: 90% !important;
+        font-size: 16px !important;
+        letter-spacing: 2px !important;
+    }
+
+}/* ========================================
+   SILVER MAN — MUSCLE MENU
+   ======================================== */
+
+.training-browser {
+    margin-top: 60px;
+}
+
+.training-browser-heading {
+    margin-bottom: 35px;
+}
+
+.training-browser-heading > span,
+.exercise-heading > span {
+    display: block;
+    margin-bottom: 12px;
+
+    color: #a83a32;
+
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.training-browser-heading h3,
+.exercise-heading h3 {
+    font-family: "Cormorant Garamond", Georgia, serif;
+
+    font-size: clamp(35px, 5vw, 60px);
+    line-height: 0.95;
+
+    text-transform: uppercase;
+}
+
+.training-browser-heading h3 strong,
+.exercise-heading h3 strong {
+    color: #a83a32;
+}
+
+.training-browser-heading p,
+.exercise-heading p {
+    max-width: 550px;
+    margin-top: 18px;
+
+    color: #887770;
+
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+
+/* MUSCLE LIST */
+
+.muscle-grid {
+    display: flex !important;
+    flex-direction: column !important;
+
+    width: 100%;
+    gap: 8px;
+}
+
+
+.muscle-card {
+    position: relative;
+
+    width: 100% !important;
+    min-height: 82px;
+
+    display: grid !important;
+    grid-template-columns: 65px 1fr auto !important;
+    align-items: center;
+
+    padding: 18px 25px !important;
+
+    background: #120c0b !important;
+
+    border: 1px solid #30201d !important;
+
+    color: #eee5dc !important;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    transition:
+        background 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.muscle-card::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    width: 3px;
+    height: 0;
+
+    background: #a83a32;
+
+    transition: height 0.3s ease;
+}
+
+
+.muscle-card:hover {
+    background: #1a0d0c !important;
+
+    border-color: #7e2925 !important;
+
+    transform: translateX(6px);
+}
+
+
+.muscle-card:hover::before {
+    height: 100%;
+}
+
+
+.muscle-card > span {
+    color: #6f5c55;
+
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+
+.muscle-card strong {
+    color: #eee5dc !important;
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+
+    font-size: 25px !important;
+    letter-spacing: 1px;
+
+    transition: color 0.3s ease;
+}
+
+
+.muscle-card:hover strong {
+    color: #c94a43 !important;
+}
+
+
+.muscle-card small {
+    color: #806d65;
+
+    font-size: 9px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    transition: color 0.3s ease;
+}
+
+
+.muscle-card:hover small {
+    color: #c94a43;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .muscle-card {
+        grid-template-columns: 45px 1fr auto !important;
+
+        min-height: 72px;
+
+        padding: 15px 17px !important;
+    }
+
+    .muscle-card strong {
+        font-size: 21px !important;
+    }
+
+    .muscle-card small {
+        font-size: 7px;
+        letter-spacing: 1px;
+    }
+
+}/* ========================================
+   SILVER MAN — EXERCISE LIST
+   ======================================== */
+
+.exercise-browser {
+    margin-top: 55px;
+}
+
+.back-training {
+    margin-bottom: 35px;
+
+    padding: 10px 16px;
+
+    background: transparent;
+
+    border: 1px solid #34201d;
+
+    color: #9f8b82;
+
+    font-size: 9px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.back-training:hover {
+    color: #c94a43;
+    border-color: #8f2929;
+}
+
+
+/* EXERCISE HEADING */
+
+.exercise-heading {
+    margin-bottom: 35px;
+}
+
+.exercise-heading h3 {
+    color: #eee5dc;
+}
+
+
+/* EXERCISE ROWS */
+
+.exercise-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+
+.exercise-card {
+    display: grid;
+
+    grid-template-columns: 70px 1fr 40px;
+
+    align-items: center;
+
+    min-height: 88px;
+
+    padding: 18px 25px;
+
+    background: #120c0b;
+
+    border: 1px solid #30201d;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        background 0.3s ease;
+}
+
+
+.exercise-card:hover {
+    transform: translateX(6px);
+
+    background: #1a0d0c;
+
+    border-color: #7e2925;
+}
+
+
+.exercise-number {
+    color: #704f49;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+.exercise-info h4 {
+    margin-bottom: 4px;
+
+    color: #eee5dc;
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+
+    font-size: 25px;
+
+    letter-spacing: 0.5px;
+}
+
+
+.exercise-info p {
+    color: #705f58;
+
+    font-size: 10px;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+
+.exercise-arrow {
+    color: #a83a32;
+
+    font-size: 18px;
+
+    text-align: right;
+
+    transition: transform 0.3s ease;
+}
+
+
+.exercise-card:hover .exercise-arrow {
+    transform: translateX(5px);
+}
+
+
+/* ========================================
+   PREMIUM UNLOCK SECTION
+   ======================================== */
+
+.premium-unlock {
+    position: relative;
+
+    margin-top: 55px;
+
+    padding: 55px 35px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #1a0c0b,
+            #100807
+        );
+
+    border: 1px solid #4b211e;
+
+    overflow: hidden;
+}
+
+
+.premium-unlock::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 50%;
+
+    width: 300px;
+    height: 1px;
+
+    background: #a83a32;
+
+    transform: translateX(-50%);
+}
+
+
+.premium-unlock > span {
+    display: block;
+
+    margin-bottom: 14px;
+
+    color: #a83a32;
+
+    font-size: 9px;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+}
+
+
+.premium-unlock h3 {
+    color: #eee5dc;
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+
+    font-size: clamp(32px, 5vw, 55px);
+
+    line-height: 1;
+
+    text-transform: uppercase;
+}
+
+
+.premium-unlock h3 strong {
+    display: block;
+
+    color: #a83a32;
+}
+
+
+.premium-unlock > p {
+    max-width: 560px;
+
+    margin: 20px auto 30px;
+
+    color: #887770;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .exercise-card {
+        grid-template-columns: 42px 1fr 25px;
+
+        padding: 16px;
+
+        min-height: 78px;
+    }
+
+    .exercise-info h4 {
+        font-size: 21px;
+    }
+
+    .exercise-info p {
+        font-size: 8px;
+    }
+
+    .premium-unlock {
+        padding: 45px 20px;
+    }
+
+}/* ========================================
+   PREMIUM FEATURES
+   ======================================== */
+
+.premium-unlock {
+    box-shadow:
+        inset 0 0 80px rgba(100, 20, 15, 0.12);
+}
+
+
+.premium-unlock::after {
+    content: "✦";
+
+    position: absolute;
+
+    top: 18px;
+    right: 25px;
+
+    color: rgba(168, 58, 50, 0.35);
+
+    font-size: 28px;
+
+    animation: premiumStar 2s ease-in-out infinite;
+}
+
+
+@keyframes premiumStar {
+
+    0%,
+    100% {
+        opacity: 0.25;
+        transform: rotate(0deg) scale(0.9);
+    }
+
+    50% {
+        opacity: 0.8;
+        transform: rotate(180deg) scale(1.1);
+    }
+
+}
+
+
+/* PREMIUM DESCRIPTION */
+
+.premium-unlock > p {
+    margin-bottom: 35px;
+}
+
+
+/* UNLOCK BUTTON POSITION */
+
+.premium-unlock .unlock-btn {
+    position: relative;
+    z-index: 5;
+}
+
+
+/* SYSTEM MESSAGE STYLE */
+
+.system-message {
+    position: fixed;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: min(420px, 90%);
+
+    padding: 35px;
+
+    background: #120c0b;
+
+    border: 1px solid #8f2929;
+
+    box-shadow:
+        0 20px 80px rgba(0, 0, 0, 0.7),
+        0 0 35px rgba(140, 30, 25, 0.25);
+
+    text-align: center;
+
+    z-index: 9999;
+}
+
+
+.system-message h3 {
+    margin-bottom: 12px;
+
+    color: #b43a36;
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+
+    font-size: 30px;
+
+    text-transform: uppercase;
+}
+
+
+.system-message p {
+    color: #887770;
+
+    font-size: 12px;
+
+    line-height: 1.7;
+}
