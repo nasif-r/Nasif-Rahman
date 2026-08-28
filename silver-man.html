@@ -949,13 +949,12 @@
 
     <div>
 
-        <a
-            href="#"
-            class="logo"
-        >
-            SILVER<span>MAN</span>
-        </a>
-
+       <a
+    href="#"
+    class="logo"
+>
+    <span class="silver-text">SILVER</span><span class="man-text">MAN</span>
+</a>
 
         <p>
             Strength · Discipline · Growth
@@ -967,7 +966,9 @@
     <p>
         © 2026 Silver Man. All rights reserved.
     </p>
-
+<p class="designed-by">
+    Designed by <span>Nasif</span>
+</p>
 
 </footer>
 
@@ -2365,214 +2366,29 @@ document.addEventListener(
     }
 );
 /* =========================================
-   SILVER MAN VINTAGE SOUND SYSTEM
+   SILVER MAN BUTTON SOUNDS
    ========================================= */
 
-let audioContext = null;
+const normalSound = new Audio("normal.wav");
+const premiumSound = new Audio("premium-button.wav");
 
-function getAudioContext() {
-
-    if (!audioContext) {
-        audioContext = new (
-            window.AudioContext ||
-            window.webkitAudioContext
-        )();
-    }
-
-    if (audioContext.state === "suspended") {
-        audioContext.resume();
-    }
-
-    return audioContext;
-}
-
-
-/* =========================================
-   VINTAGE BUTTON SOUND
-   Metallic / Mechanical / Old-School
-   ========================================= */
-
-function playVintageSound() {
-
-    const ctx = getAudioContext();
-    const now = ctx.currentTime;
-
-
-    /* Mechanical click */
-
-    const click = ctx.createOscillator();
-    const clickGain = ctx.createGain();
-
-    click.type = "square";
-
-    click.frequency.setValueAtTime(1800, now);
-    click.frequency.exponentialRampToValueAtTime(
-        420,
-        now + 0.035
-    );
-
-    clickGain.gain.setValueAtTime(0.055, now);
-    clickGain.gain.exponentialRampToValueAtTime(
-        0.001,
-        now + 0.045
-    );
-
-    click.connect(clickGain);
-    clickGain.connect(ctx.destination);
-
-    click.start(now);
-    click.stop(now + 0.05);
-
-
-    /* Low mechanical thump */
-
-    const thump = ctx.createOscillator();
-    const thumpGain = ctx.createGain();
-
-    thump.type = "triangle";
-
-    thump.frequency.setValueAtTime(145, now);
-    thump.frequency.exponentialRampToValueAtTime(
-        65,
-        now + 0.12
-    );
-
-    thumpGain.gain.setValueAtTime(0.10, now);
-    thumpGain.gain.exponentialRampToValueAtTime(
-        0.001,
-        now + 0.14
-    );
-
-    thump.connect(thumpGain);
-    thumpGain.connect(ctx.destination);
-
-    thump.start(now);
-    thump.stop(now + 0.15);
-}
-
-
-/* =========================================
-   PREMIUM POWER SOUND
-   Deep + Heavy + Metallic
-   ========================================= */
-
-function playPremiumPowerSound() {
-
-    const ctx = getAudioContext();
-    const now = ctx.currentTime;
-
-
-    /* Deep impact */
-
-    const impact = ctx.createOscillator();
-    const impactGain = ctx.createGain();
-
-    impact.type = "sine";
-
-    impact.frequency.setValueAtTime(90, now);
-    impact.frequency.exponentialRampToValueAtTime(
-        32,
-        now + 0.65
-    );
-
-    impactGain.gain.setValueAtTime(0.45, now);
-    impactGain.gain.exponentialRampToValueAtTime(
-        0.001,
-        now + 0.7
-    );
-
-    impact.connect(impactGain);
-    impactGain.connect(ctx.destination);
-
-    impact.start(now);
-    impact.stop(now + 0.72);
-
-
-    /* Heavy metallic strike */
-
-    const metal = ctx.createOscillator();
-    const metalGain = ctx.createGain();
-
-    metal.type = "square";
-
-    metal.frequency.setValueAtTime(260, now);
-    metal.frequency.exponentialRampToValueAtTime(
-        1100,
-        now + 0.07
-    );
-    metal.frequency.exponentialRampToValueAtTime(
-        170,
-        now + 0.5
-    );
-
-    metalGain.gain.setValueAtTime(0.12, now);
-    metalGain.gain.exponentialRampToValueAtTime(
-        0.001,
-        now + 0.55
-    );
-
-    metal.connect(metalGain);
-    metalGain.connect(ctx.destination);
-
-    metal.start(now);
-    metal.stop(now + 0.58);
-
-
-    /* Metallic resonance */
-
-    const resonance = ctx.createOscillator();
-    const resonanceGain = ctx.createGain();
-
-    resonance.type = "triangle";
-
-    resonance.frequency.setValueAtTime(
-        920,
-        now + 0.03
-    );
-
-    resonance.frequency.exponentialRampToValueAtTime(
-        320,
-        now + 0.7
-    );
-
-    resonanceGain.gain.setValueAtTime(
-        0.12,
-        now + 0.03
-    );
-
-    resonanceGain.gain.exponentialRampToValueAtTime(
-        0.001,
-        now + 0.72
-    );
-
-    resonance.connect(resonanceGain);
-    resonanceGain.connect(ctx.destination);
-
-    resonance.start(now + 0.03);
-    resonance.stop(now + 0.75);
-}
-
-
-/* =========================================
-   BUTTON SOUND DETECTION
-   ========================================= */
 
 document.addEventListener("click", function(event) {
 
-    const button = event.target.closest("button");
+    const button = event.target.closest("button, a");
 
     if (!button) return;
 
 
-    /* Premium button */
-
     if (button.classList.contains("unlock-btn")) {
 
-        playPremiumPowerSound();
+        premiumSound.currentTime = 0;
+        premiumSound.play();
 
     } else {
 
-        playVintageSound();
+        normalSound.currentTime = 0;
+        normalSound.play();
 
     }
 
