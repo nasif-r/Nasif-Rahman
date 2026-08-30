@@ -2394,8 +2394,140 @@ document.addEventListener("click", function(event) {
 
 });
 </script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const fist = document.getElementById("fistCursor");
+
+    if (!fist) return;
+
+    let mouseX = 0;
+    let mouseY = 0;
+
+    let currentX = 0;
+    let currentY = 0;
 
 
+    document.addEventListener("mousemove", function (e) {
+
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+
+    });
+
+
+    function moveFist() {
+
+        currentX += (mouseX - currentX) * 0.25;
+        currentY += (mouseY - currentY) * 0.25;
+
+        fist.style.left = currentX + "px";
+        fist.style.top = currentY + "px";
+
+        requestAnimationFrame(moveFist);
+
+    }
+
+    moveFist();
+
+
+    document.addEventListener("mouseover", function (e) {
+
+        if (
+            e.target.closest(
+                "a, button, .level-card, .muscle-card, .exercise-card"
+            )
+        ) {
+
+            fist.classList.add("hover");
+
+        }
+
+    });
+
+
+    document.addEventListener("mouseout", function (e) {
+
+        if (
+            e.target.closest(
+                "a, button, .level-card, .muscle-card, .exercise-card"
+            )
+        ) {
+
+            fist.classList.remove("hover");
+
+        }
+
+    });
+
+
+    document.addEventListener("mousedown", function () {
+
+        fist.classList.add("click");
+
+    });
+
+
+    document.addEventListener("mouseup", function () {
+
+        fist.classList.remove("click");
+
+    });
+
+});
+document.addEventListener("DOMContentLoaded", function () {
+
+    const music = document.getElementById("gymMusic");
+    const musicButton = document.getElementById("musicToggle");
+
+    if (!music || !musicButton) {
+        console.log("Music elements not found.");
+        return;
+    }
+
+    musicButton.addEventListener("click", function (event) {
+
+        event.stopPropagation();
+
+        if (music.paused) {
+
+            music.volume = 0.4;
+
+            music.play()
+                .then(function () {
+
+                    musicButton.textContent = "❚❚";
+                    musicButton.classList.add("playing");
+
+                })
+                .catch(function (error) {
+
+                    console.log(
+                        "Music could not play:",
+                        error
+                    );
+
+                });
+
+        } else {
+
+            music.pause();
+
+            musicButton.textContent = "♫";
+            musicButton.classList.remove("playing");
+
+        }
+
+    });
+
+});
+</script>
+<div id="fistCursor" class="fist-cursor">
+    ⚔️
+</div>
+<button id="musicToggle" type="button">♫</button>
+
+<audio id="gymMusic" src="gym.mp3" loop></audio>
 </body>
 
 </html>
