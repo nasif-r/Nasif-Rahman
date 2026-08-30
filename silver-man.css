@@ -2458,11 +2458,11 @@ body,
 }
 
 .vintage-cursor.cursor-hover .cursor-symbol {
-    border-color: #c32626;
+    border-color: #a17575;
 
     box-shadow:
-        0 0 0 2px rgba(195, 38, 38, 0.25),
-        0 0 14px rgba(195, 38, 38, 0.55);
+        0 0 0 2px rgba(157, 126, 126, 0.25),
+        0 0 14px rgba(188, 161, 161, 0.55);
 }
 
 
@@ -2475,7 +2475,7 @@ body,
 }
 
 .vintage-cursor.cursor-click .cursor-symbol {
-    border-color: #df3030;
+    border-color: #a07c7c;
 }
 
 
@@ -2513,7 +2513,7 @@ body,
         font-size: 25px;
         line-height: 1;
 
-        color: #c51622;
+        color: #b67e82;
 
         filter:
             grayscale(1)
@@ -2521,8 +2521,8 @@ body,
             sepia(1)
             saturate(8)
             hue-rotate(325deg)
-            drop-shadow(0 1px 1px #4b0508)
-            drop-shadow(0 0 3px rgba(255, 35, 45, 0.45));
+            drop-shadow(0 1px 1px #a5686b)
+            drop-shadow(0 0 3px rgba(190, 146, 149, 0.45));
 
         transform:
             translate(-50%, -50%)
@@ -2547,8 +2547,8 @@ body,
             sepia(1)
             saturate(10)
             hue-rotate(325deg)
-            drop-shadow(0 1px 1px #4b0508)
-            drop-shadow(0 0 6px rgba(255, 35, 45, 0.65));
+            drop-shadow(0 1px 1px #906163)
+            drop-shadow(0 0 6px rgba(176, 119, 121, 0.65));
     }
 
     .fist-cursor.click {
@@ -2584,7 +2584,7 @@ body,
     border: 1px solid #999;
     border-radius: 50%;
 
-    background: #111;
+    background: #a67e7e;
 
     color: #cfcfcf;
 
