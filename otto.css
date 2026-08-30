@@ -194,4 +194,283 @@ body {
     box-shadow: 0 4px 18px rgba(0, 0, 0, 0.5);
 
     pointer-events: none;
+}/* =========================
+   OTTOMAN HISTORY BUTTON
+========================= */
+
+#history-btn {
+    position: fixed;
+    top: 25px;
+    right: 25px;
+
+    z-index: 10001;
+
+    padding: 13px 22px;
+
+    background: rgba(25, 20, 16, 0.92);
+    color: #e8d5ad;
+
+    border: 1px solid #9b8050;
+    border-radius: 3px;
+
+    font-family: Georgia, serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 0 18px rgba(150, 120, 70, 0.25);
+
+    transition: all 0.3s ease;
+}
+
+#history-btn:hover {
+    background: #e8d5ad;
+    color: #15120f;
+
+    box-shadow:
+        0 0 25px rgba(220, 190, 130, 0.45);
+}
+
+
+/* =========================
+   HISTORY PANEL
+========================= */
+
+#history-panel {
+    position: fixed;
+    inset: 0;
+
+    z-index: 10002;
+
+    background:
+        rgba(5, 5, 5, 0.94);
+
+    backdrop-filter: blur(8px);
+
+    overflow-y: auto;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition:
+        opacity 0.45s ease,
+        visibility 0.45s ease;
+}
+
+#history-panel.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* CLOSE */
+
+#history-close {
+    position: fixed;
+
+    top: 22px;
+    right: 28px;
+
+    z-index: 10003;
+
+    width: 42px;
+    height: 42px;
+
+    background: transparent;
+
+    color: #ddd;
+
+    border: 1px solid #555;
+
+    font-size: 28px;
+    font-weight: 300;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+#history-close:hover {
+    background: #ddd;
+    color: #111;
+}
+
+
+/* CONTENT */
+
+.history-content {
+    width: min(850px, 88%);
+
+    margin: 90px auto 100px;
+
+    color: #ddd;
+}
+
+
+/* HEADER */
+
+.history-label {
+    margin: 0 0 12px;
+
+    color: #a58a5b;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 12px;
+
+    letter-spacing: 4px;
+}
+
+.history-content h2 {
+    margin: 0;
+
+    font-family: Georgia, serif;
+
+    font-size: clamp(38px, 6vw, 70px);
+
+    letter-spacing: 5px;
+
+    color: #f0e5cc;
+}
+
+.history-intro {
+    max-width: 650px;
+
+    margin-top: 22px;
+
+    color: #999;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+/* TIMELINE */
+
+.history-timeline {
+    position: relative;
+
+    margin-top: 70px;
+
+    padding-left: 45px;
+}
+
+.history-timeline::before {
+    content: "";
+
+    position: absolute;
+
+    left: 8px;
+    top: 5px;
+    bottom: 0;
+
+    width: 1px;
+
+    background: #66563d;
+}
+
+
+/* HISTORY ITEM */
+
+.history-item {
+    position: relative;
+
+    margin-bottom: 60px;
+}
+
+.history-item::before {
+    content: "";
+
+    position: absolute;
+
+    left: -41px;
+    top: 4px;
+
+    width: 10px;
+    height: 10px;
+
+    border: 1px solid #c5a66f;
+
+    background: #111;
+
+    border-radius: 50%;
+}
+
+.history-item span {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #b99a63;
+
+    font-family: Georgia, serif;
+
+    font-size: 14px;
+
+    letter-spacing: 2px;
+}
+
+.history-item h3 {
+    margin: 0 0 10px;
+
+    color: #eee;
+
+    font-family: Georgia, serif;
+
+    font-size: 23px;
+
+    letter-spacing: 1px;
+}
+
+.history-item p {
+    max-width: 650px;
+
+    margin: 0;
+
+    color: #999;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    #history-btn {
+        top: 15px;
+        right: 15px;
+
+        padding: 10px 14px;
+
+        font-size: 10px;
+    }
+
+    .history-content {
+        width: 84%;
+
+        margin-top: 85px;
+    }
+
+    .history-timeline {
+        padding-left: 32px;
+    }
+
+    .history-item::before {
+        left: -28px;
+    }
+
+    .history-timeline::before {
+        left: 4px;
+    }
+
 }
