@@ -1525,8 +1525,271 @@ if (jokeRequest || moreRequest) {
     lastResponseWasJoke = true;
 
     return randomJoke;
+}/* ================================
+   BUSINESS & INDUSTRY BASICS
+================================ */
+
+if (
+    message.includes("what is a business") ||
+    message.includes("what is business")
+) {
+    return "A business is an activity or organization that provides products or services to customers in exchange for money. A successful business solves a problem while creating value for its customers.";
 }
 
+if (
+    message.includes("what is an industry") ||
+    message.includes("what does industry mean")
+) {
+    return "An industry is a group of businesses that provide similar types of products or services. Examples include technology, healthcare, finance, education, manufacturing, and retail.";
+}
+
+if (
+    message.includes("what is a business model") ||
+    message.includes("business model")
+) {
+    return "A business model explains how a company creates value, delivers that value to customers, and generates revenue from it.";
+}
+
+if (
+    message.includes("what is revenue") ||
+    message.includes("what does revenue mean")
+) {
+    return "Revenue is the total amount of money a business earns from selling its products or services before expenses are deducted.";
+}
+
+if (
+    message.includes("what is profit") ||
+    message.includes("what does profit mean")
+) {
+    return "Profit is the money a business has left after subtracting its expenses from its revenue. In simple terms: Profit = Revenue − Expenses.";
+}
+
+if (
+    message.includes("what is a customer") ||
+    message.includes("who is a customer")
+) {
+    return "A customer is a person or organization that buys or uses a company's product or service.";
+}
+
+if (
+    message.includes("what is a target customer") ||
+    message.includes("target customer") ||
+    message.includes("target audience")
+) {
+    return "A target customer is the specific group of people or organizations a business is trying to serve. Understanding them helps a business create better products and marketing strategies.";
+}
+
+if (
+    message.includes("what is a market") ||
+    message.includes("what does market mean")
+) {
+    return "A market is the group of customers and businesses involved in buying and selling a particular product or service.";
+}
+
+if (
+    message.includes("what is marketing") ||
+    message.includes("what does marketing mean")
+) {
+    return "Marketing is the process of understanding customers, communicating the value of a product or service, attracting potential customers, and encouraging them to buy.";
+}
+
+if (
+    message.includes("what is branding") ||
+    message.includes("what does branding mean")
+) {
+    return "Branding is the process of creating a recognizable identity for a business through its name, visual design, personality, communication, and overall customer experience.";
+}
+
+if (
+    message.includes("what is a startup") ||
+    message.includes("what does startup mean")
+) {
+    return "A startup is a newly established business designed to solve a problem and potentially grow into a larger company. Startups often focus on innovation, experimentation, and scalability.";
+}
+
+if (
+    message.includes("what is an entrepreneur") ||
+    message.includes("who is an entrepreneur") ||
+    message.includes("entrepreneur meaning")
+) {
+    return "An entrepreneur is someone who identifies an opportunity, creates a product or service, takes calculated risks, and builds a business around it.";
+}
+
+if (
+    message.includes("what is entrepreneurship") ||
+    message.includes("entrepreneurship meaning")
+) {
+    return "Entrepreneurship is the process of identifying opportunities, creating solutions, taking calculated risks, and building a business or organization around those opportunities.";
+}
+
+if (
+    message.includes("what is a product") ||
+    message.includes("what is product")
+) {
+    return "A product is something created to provide value to customers. It can be a physical item, digital product, software, or another type of solution.";
+}
+
+if (
+    message.includes("what is a service") ||
+    message.includes("what does service mean")
+) {
+    return "A service is an activity or solution provided to customers rather than a physical product. Examples include consulting, web design, education, transportation, and software services.";
+}
+
+if (
+    message.includes("what is b2b") ||
+    message.includes("what does b2b mean")
+) {
+    return "B2B means Business-to-Business. It describes companies that sell products or services to other businesses rather than directly to individual consumers.";
+}
+
+if (
+    message.includes("what is b2c") ||
+    message.includes("what does b2c mean")
+) {
+    return "B2C means Business-to-Consumer. It describes businesses that sell products or services directly to individual customers.";
+}
+
+if (
+    message.includes("what is competition") ||
+    message.includes("business competition")
+) {
+    return "Business competition happens when multiple companies try to attract the same customers. Competition can encourage businesses to improve their products, prices, service, and customer experience.";
+}
+
+if (
+    message.includes("what is a competitor") ||
+    message.includes("who is a competitor")
+) {
+    return "A competitor is another business that offers a similar product or service and targets the same or a similar group of customers.";
+}
+
+if (
+    message.includes("what is a business plan") ||
+    message.includes("business plan")
+) {
+    return "A business plan is a document that explains a business idea, target customers, products or services, business model, marketing strategy, operations, and financial goals.";
+}
+
+if (
+    message.includes("what is market research") ||
+    message.includes("market research")
+) {
+    return "Market research is the process of collecting and analyzing information about customers, competitors, trends, and market demand before making business decisions.";
+}
+
+if (
+    message.includes("what is a niche") ||
+    message.includes("what is niche market") ||
+    message.includes("niche market")
+) {
+    return "A niche market is a smaller, specific segment of a larger market with particular needs or interests. Focusing on a niche can help a new business serve a specific audience more effectively.";
+}
+
+if (
+    message.includes("what is customer retention") ||
+    message.includes("customer retention")
+) {
+    return "Customer retention means keeping existing customers and encouraging them to continue buying from a business. Good products, service, communication, and customer experience can improve retention.";
+}
+
+if (
+    message.includes("what is customer acquisition") ||
+    message.includes("customer acquisition")
+) {
+    return "Customer acquisition is the process of attracting and converting new customers. Businesses use marketing, advertising, content, referrals, sales, and other strategies for acquisition.";
+}
+
+if (
+    message.includes("what is scalability") ||
+    message.includes("what does scalable mean") ||
+    message.includes("scalability")
+) {
+    return "Scalability is a business's ability to grow its revenue or customer base without increasing its costs at the same rate.";
+}
+
+if (
+    message.includes("what is cash flow") ||
+    message.includes("cash flow")
+) {
+    return "Cash flow is the movement of money into and out of a business. Positive cash flow means more money is coming in than going out during a period.";
+}
+
+if (
+    message.includes("what is an asset") ||
+    message.includes("business asset")
+) {
+    return "An asset is something valuable owned or controlled by a business. Examples include cash, equipment, property, inventory, intellectual property, and certain investments.";
+}
+
+if (
+    message.includes("what is a liability") ||
+    message.includes("business liability")
+) {
+    return "A liability is a financial obligation or debt that a business owes to another party, such as loans, unpaid bills, or other obligations.";
+}
+
+if (
+    message.includes("what is roi") ||
+    message.includes("what does roi mean") ||
+    message.includes("return on investment")
+) {
+    return "ROI stands for Return on Investment. It measures how much return an investment generates compared with its cost. It is commonly used to evaluate whether an investment was worthwhile.";
+}
+
+if (
+    message.includes("what is sales") ||
+    message.includes("what does sales mean")
+) {
+    return "Sales is the process of converting potential customers into paying customers by helping them understand and purchase a product or service.";
+}
+
+if (
+    message.includes("what is a business strategy") ||
+    message.includes("business strategy")
+) {
+    return "A business strategy is a long-term plan for how a company will compete, serve customers, use its resources, and achieve its goals.";
+}
+
+if (
+    message.includes("what is a business goal") ||
+    message.includes("business goals")
+) {
+    return "A business goal is a specific result a company wants to achieve, such as increasing revenue, gaining customers, entering a new market, or improving customer satisfaction.";
+}
+
+if (
+    message.includes("how do businesses make money") ||
+    message.includes("how does a business make money") ||
+    message.includes("how do companies make money")
+) {
+    return "Businesses make money by providing products or services that customers are willing to pay for. Revenue can come from sales, subscriptions, licensing, advertising, commissions, or other business models.";
+}
+if (
+    message.includes("what is silver man") ||
+    message.includes("tell me about silver man")
+) {
+    return "Silver Man is a modern fitness experience focused on strength, discipline, training, and personal growth.";
+}
+
+if (
+    message.includes("what does silver man offer") ||
+    message.includes("what services does silver man offer")
+) {
+    return "Silver Man offers structured fitness programs, training levels, exercise guidance, trainer information, and membership plans.";
+}
+
+if (
+    message.includes("what is a business")
+) {
+    return "A business is an organization or activity that provides products or services to customers in exchange for money.";
+}
+
+if (
+    message.includes("what is an industry")
+) {
+    return "An industry is a group of businesses that operate in the same or a related field, such as technology, healthcare, finance, or fitness.";
+}
 // DEFAULT RESPONSE
 
 return "I don't have an answer for that yet. Try asking me about business ideas, websites, marketing, branding, customers, pricing, startups, freelancing or AI.";
