@@ -1419,7 +1419,7 @@ footer {
     background: #eeeeee;
     color: #000000;
     transform: translateY(-2px);
-}```css
+}
 /* ========================================
    EXTRA MOBILE RESPONSIVE IMPROVEMENTS
    ======================================== */
@@ -2628,4 +2628,38 @@ canvas {
     .project-card:hover .neura-interface-logo {
         transform: none;
     }
+}
+#heroImage {
+    transition: opacity 0.5s ease-in-out;
+}
+.image-frame {
+    position: relative;
+    display: inline-block;
+}
+
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 20px;
+    padding: 10px 14px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    z-index: 10;
+}
+
+.nav-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
 }

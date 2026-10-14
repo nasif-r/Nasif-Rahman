@@ -155,17 +155,23 @@
                         <strong><strong>Bangladesh · Available Worldwide</strong></strong>
                     </div>
 <!-- ABOUT -->
-                <div class="hero-image-wrapper">
+           <div class="hero-image-wrapper">
+    <div class="image-frame">
+        <!-- Left Arrow -->
+        <button class="nav-btn prev-btn" onclick="prevImage()">&#10094;</button>
 
-                    <div class="image-frame">
+        <img
+            id="heroImage"
+            src="nasifrahman.png"
+            alt="Nasif Rahman"
+        >
 
-                        <img
-                            src="nasifrahman.png"
-                            alt="Nasif Rahman"
-                        >
-
-                    </div>
-                    
+        <!-- Right Arrow -->
+        <button class="nav-btn next-btn" onclick="nextImage()">&#10095;</button>
+    </div>
+</div>
+</div>
+</div>
 
 
                     <div class="image-caption">
@@ -900,7 +906,60 @@ style="cursor: pointer;"
 
     </footer>
 
+<script>
+        const images = [
+            "nasifrahman.png",
+            "profile.png.png" 
+        ];
 
+        let currentIndex = 0;
+        const imgElement = document.getElementById("heroImage");
+
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % images.length;
+            imgElement.src = images[currentIndex];
+        }, 3000);
+    </script>
+<script>
+    const images = [
+        "nasifrahman.png",
+        "profile.png.png"    
+    ];
+
+    let currentIndex = 0;
+    const imgElement = document.getElementById("heroImage");
+    let autoSlideTimer;
+
+    function updateImage() {
+        imgElement.src = images[currentIndex];
+    }
+
+    function nextImage() {
+        currentIndex = (currentIndex + 1) % images.length;
+        updateImage();
+        resetTimer();
+    }
+
+    function prevImage() {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        updateImage();
+        resetTimer();
+    }
+
+    function startTimer() {
+        autoSlideTimer = setInterval(() => {
+            currentIndex = (currentIndex + 1) % images.length;
+            updateImage();
+        }, 3000);
+    }
+
+    function resetTimer() {
+        clearInterval(autoSlideTimer);
+        startTimer();
+    }
+
+    startTimer();
+</script>
 </body>
 </html>
 
