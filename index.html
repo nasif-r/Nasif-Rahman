@@ -905,25 +905,10 @@ style="cursor: pointer;"
         </div>
 
     </footer>
-
-<script>
-        const images = [
-            "nasifrahman.png",
-            "profile.png.png" 
-        ];
-
-        let currentIndex = 0;
-        const imgElement = document.getElementById("heroImage");
-
-        setInterval(() => {
-            currentIndex = (currentIndex + 1) % images.length;
-            imgElement.src = images[currentIndex];
-        }, 3000);
-    </script>
 <script>
     const images = [
         "nasifrahman.png",
-        "profile.png.png"    
+        "profile.png.png"   
     ];
 
     let currentIndex = 0;
@@ -931,7 +916,9 @@ style="cursor: pointer;"
     let autoSlideTimer;
 
     function updateImage() {
-        imgElement.src = images[currentIndex];
+        if (imgElement) {
+            imgElement.src = images[currentIndex];
+        }
     }
 
     function nextImage() {
@@ -946,19 +933,7 @@ style="cursor: pointer;"
         resetTimer();
     }
 
-    function startTimer() {
-        autoSlideTimer = setInterval(() => {
-            currentIndex = (currentIndex + 1) % images.length;
-            updateImage();
-        }, 3000);
-    }
-
-    function resetTimer() {
-        clearInterval(autoSlideTimer);
-        startTimer();
-    }
-
-    startTimer();
+   
 </script>
 </body>
 </html>
